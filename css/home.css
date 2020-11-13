@@ -1,0 +1,110 @@
+* {
+	box-sizing: border-box;
+}
+/**
+	color: #ffffff; white
+	color: #1a1a1a; dark grey
+	color: #e60039; pinkish red
+**/
+body { 
+	margin: 0;
+}
+.home{
+
+}
+.name{
+	padding: 16px;
+	text-align: center;
+	height: 100%;
+	background-color: #1a1a1a;
+}
+.hide{
+	display: none;
+}
+.helloWorld{
+	margin-top: 9%;
+	font-size: 40px;
+	color: #e60039;
+	font-family: Arial;
+	font-weight: bold;
+}
+.myName{
+	font-size: 80px;
+	font-family: first job;
+	font-weight: bold;
+	color: #ffffff;
+}
+.job a{
+	text-decoration: none;
+	font-size: 36px;
+	color: #e60039;
+	font-family: Arial;
+}
+#lOne{
+	border-style: hidden solid hidden solid;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+#lTwo{
+	border-style: hidden solid hidden hidden;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+.linkIcons{
+	font-size: 24px;
+	margin-left: : 10px;
+	display: inline;
+}
+.forM{
+	margin: 220px 0px 0px 0px;
+}
+.linkIcons a{
+	text-decoration: none;
+	color: #ffffff;
+	padding: 20px;
+}
+@media(max-width: 500px){
+	.name{
+		height: 630px;
+		padding-top: 90px;
+	}
+	.myName{
+		font-size: 60px;
+	}
+	.hide{
+		display: block;
+	}
+	.job a{
+		display: block;
+	}
+	#lOne{
+		border-style: none;
+	}
+	#lTwo{
+		border-style: none;
+	}
+}
+@media(max-width:800px) {
+	.helloWorld{
+		padding-top: 20px;
+	}
+	.name{
+		height: 700px;
+	}
+	.forM{
+		margin: 170px 0px 0px 0px;
+	}
+	.hide{
+		display: block;
+	}
+	.job a{
+		display: block;
+	}
+	#lOne{
+		border-style: none;
+	}
+	#lTwo{
+		border-style: none;
+	}
+}

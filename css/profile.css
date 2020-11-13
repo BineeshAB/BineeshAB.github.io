@@ -1,0 +1,111 @@
+* {
+	box-sizing: border-box;
+}
+/**
+	color: #ffffff; white
+	color: #1a1a1a; dark grey
+	color: #e60039; pinkish red
+	color: #f7f7f7; Light Grey
+	color: #808080; Medium Grey
+
+**/
+.profile{
+	height: auto;
+}
+.profileDetails{
+	padding: 100px 0px 50px 0px;
+}
+.profileTitle{
+	text-align: center;
+	font-family: Arial;
+	font-weight: bold;
+	font-size: 24px;
+	color: #e60039;
+}
+.profileList{
+	margin: 10px 150px 70px 150px;
+}
+.profileList:after{
+	content: "";
+	display: table;
+	clear: both;
+}
+.personalDetails{
+	float: left;
+	width: 50%;
+	margin-top: 10px;
+	padding: 5px;
+}
+.myFullName, .myDOB, .myJob, .myMailID{
+	padding-bottom: 1px;
+}
+.myFullName{
+	margin-top: 50px;
+}
+.skillList{
+	margin-top: 35px;
+}
+.programmingSkills{
+	float: left;
+	width: 50%;
+	margin-top: 10px;
+	padding: 5px;
+}
+.profileHeading{
+	text-align: center;
+	font-family: Arial;
+	font-weight: bold;
+	font-size: 30px;
+}
+.myTitle{
+	font-size: 20px;
+	font-family: Arial;
+	font-weight: bold;
+}
+.myDetail{
+	font-size: 18px;
+	font-family: Arial;
+	line-height: 1%;
+}
+.skillList{
+	font-family: Arial;
+	font-size: 20px;
+	font-weight: bold;
+	line-height: 250%;
+}
+@media(max-width:800px) {
+	.personalDetails{
+		width: 100%;
+
+	}
+	.profileList{
+		margin: 0;
+	}
+	.programmingSkills{
+		width: 100%;
+		margin-top: 40px;
+	}
+	.profileList{
+		margin: 5px 90px 70px 90px;
+	}
+}
+@media(max-width: 500px){
+	.personalDetails{
+		width: 100%;
+	}
+	.profileHeading{
+		text-align: center;
+	}
+	.programmingSkills{
+		width: 100%;
+		margin-top: 40px;
+	}
+
+	.myDetail{
+		margin-top: -15px;
+		line-height: 160%;
+	}
+	.profileList{
+		margin: 5px 40px 70px 60px;
+	}
+}
