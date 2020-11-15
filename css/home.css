@@ -93,6 +93,9 @@ body {
 	.linkIcons{
 		margin-top: 25%;
 	}
+	.breakT{
+		display: block;
+	}
 }
 @media(max-width:800px) {
 }
