@@ -12,11 +12,9 @@
 .resume{
 	height: auto;
 }
-.resumeDetails{
-	padding: 120px 0px 50px 0px;
-	text-align: center;
-}
 .resumeTitle{
+	padding-top: 70px;
+	text-align: center;
 	font-family: Arial;
 	font-weight: bold;
 	font-size: 24px;
@@ -26,18 +24,19 @@
 	margin: 0px 150px 70px 150px;
 }
 .resumeDescrpition{
+	text-align: center;
 	font-size: 26px;
 	padding: 15px;
 }
 .downloadCV{
 	padding: 10px;
+	text-align: center;
 }
 .downloadBtn{
 	background-color: #1a1a1a;
 	color: #e60039;
 	padding: 15px 32px;
 	text-align: center;
-	text-decoration: none;
 	display: inline-block;
 	font-size: 16px;
 	margin: 4px 2px;
@@ -46,25 +45,23 @@
 	font-family: Arial;
 	font-weight: bold;
 }
+.downloadBtn a{
+	text-decoration: none;
+}
 .downloadBtn:hover{
 	background-color: #ffffff;
 }
 @media(max-width: 500px){
 	.resumeContent{
-		margin: 50px 50px 70px 50px;
+		margin: 0px 40px 70px 40px;
 	}
-	.downloadCV{
-		padding-top: 40px;
+	.resumeDescrpition{
+		font-size: 18px;
+	}
+	.downloadBtn{
+		font-size: 14px;
 	}
 }
 @media(max-width:800px) {
-	.resumeDetails{
-		padding: 100px 0px 50px 0px;
-	}
-	.resumeContent{
-		margin: 50px 90px 70px 90px;
-	}
-	.downloadCV{
-		padding-top: 40px;
-	}
+	
 }

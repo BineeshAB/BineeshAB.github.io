@@ -7,10 +7,13 @@
 	color: #e60039; pinkish red
 **/
 .header{
+	position: fixed;
+	display: block;
+	width: 100%;
+	top: 0;
 	padding: 10px 16px;
 	background: #1a1a1a;
 	color: #f1f1f1;
-	box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.2), 0 4px 15px 0 rgba(0, 0, 0, 0.10);
 }
 .logo{
 	color: white;
@@ -21,14 +24,10 @@
 .logo a{
 	text-decoration: none;
 	color: #ffffff;
-
 }
 .logoColor{
 	color: #e60039;
 }
 .sticky {
-  position: fixed;
-  display: block;
-  top: 0;
-  width: 100%;
+  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.2), 0 4px 15px 0 rgba(0, 0, 0, 0.10);
 }

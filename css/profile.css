@@ -11,11 +11,13 @@
 **/
 .profile{
 	height: auto;
+	padding-bottom: 70px;
 }
 .profileDetails{
-	padding: 100px 0px 50px 0px;
+	margin: 0px 150px 0px 150px;
 }
 .profileTitle{
+	padding-top: 70px;
 	text-align: center;
 	font-family: Arial;
 	font-weight: bold;
@@ -23,7 +25,7 @@
 	color: #e60039;
 }
 .profileList{
-	margin: 10px 150px 70px 150px;
+	padding-top: 20px;
 }
 .profileList:after{
 	content: "";
@@ -33,79 +35,63 @@
 .personalDetails{
 	float: left;
 	width: 50%;
-	margin-top: 10px;
-	padding: 5px;
+}
+.profileHeading{
+	padding-bottom: 20px;
+	text-align: center;
+	font-family: Arial;
+	font-weight: bold;
+	font-size: 20px;
 }
 .myFullName, .myDOB, .myJob, .myMailID{
-	padding-bottom: 1px;
+	padding-bottom: 20px;
 }
-.myFullName{
-	margin-top: 50px;
+.myTitle{
+	font-family: Arial;
+	font-weight: bold;
+	font-size: 18px;
 }
-.skillList{
-	margin-top: 35px;
+.myDetail{
+	font-family: Arial;
+	font-size: 16px;
+	padding-top: 5px;
 }
 .programmingSkills{
 	float: left;
 	width: 50%;
-	margin-top: 10px;
-	padding: 5px;
-}
-.profileHeading{
-	text-align: center;
-	font-family: Arial;
-	font-weight: bold;
-	font-size: 30px;
-}
-.myTitle{
-	font-size: 20px;
-	font-family: Arial;
-	font-weight: bold;
-}
-.myDetail{
-	font-size: 18px;
-	font-family: Arial;
-	line-height: 1%;
 }
 .skillList{
 	font-family: Arial;
 	font-size: 20px;
-	font-weight: bold;
-	line-height: 250%;
+}
+.skillList ul li{
+	padding-bottom: 19px;
 }
 @media(max-width:800px) {
+	.profileDetails{
+		margin: 0px 40px 70px 40px;
+	}
+	.profileTitle{
+		font-size: 18px;
+	}
 	.personalDetails{
+		float: left;
 		width: 100%;
-
+		padding-bottom: 20px;
 	}
-	.profileList{
-		margin: 0;
+	.myTitle{
+		font-size: 16px;
 	}
-	.programmingSkills{
-		width: 100%;
-		margin-top: 40px;
-	}
-	.profileList{
-		margin: 5px 90px 70px 90px;
-	}
-}
-@media(max-width: 500px){
-	.personalDetails{
-		width: 100%;
-	}
-	.profileHeading{
-		text-align: center;
-	}
-	.programmingSkills{
-		width: 100%;
-		margin-top: 40px;
-	}
-
 	.myDetail{
-		margin-top: -15px;
-		line-height: 160%;
+		font-size: 14px;
 	}
-	.profileList{
-		margin: 5px 40px 70px 60px;
+	.programmingSkills{
+		float: left;
+		width: 100%;
 	}
+	.skillList{
+		font-size: 14px;
+	}
+@media(max-width: 500px){
+	
 }

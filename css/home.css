@@ -10,101 +10,89 @@ body {
 	margin: 0;
 }
 .home{
-
-}
-.name{
-	padding: 16px;
-	text-align: center;
 	height: 100%;
+	width: auto;
 	background-color: #1a1a1a;
 }
-.hide{
-	display: none;
+.name{
+	margin: 0px 150px 70px 150px;
 }
 .helloWorld{
-	margin-top: 9%;
-	font-size: 40px;
-	color: #e60039;
+	padding-top: 200px;
+	text-align: center;
 	font-family: Arial;
+	font-size: 40px;
 	font-weight: bold;
+	color: #e60039;
 }
 .myName{
-	font-size: 80px;
-	font-family: first job;
+	padding-top: 10px;
+	text-align: center;
+	font-family: Bahnschrift;
 	font-weight: bold;
+	font-size: 70px;
 	color: #ffffff;
 }
-.job a{
-	text-decoration: none;
-	font-size: 36px;
-	color: #e60039;
-	font-family: Arial;
+.breakT{
+	display: none;
 }
-#lOne{
+.job{
+	padding-top: 10px;
+	text-align: center;
+	font-family: Arial;
+	font-size: 30px;
+	color: #e60039;
+}
+
+.lOne{
 	border-style: hidden solid hidden solid;
 	padding-left: 10px;
 	padding-right: 10px;
 }
-#lTwo{
+.lTwo{
 	border-style: hidden solid hidden hidden;
 	padding-left: 10px;
 	padding-right: 10px;
 }
-
 .linkIcons{
-	font-size: 24px;
-	margin-left: : 10px;
-	display: inline;
-}
-.forM{
-	margin: 220px 0px 0px 0px;
+	padding-top: 15%;
+	text-align: center;
 }
 .linkIcons a{
 	text-decoration: none;
+	font-size: 22px;
 	color: #ffffff;
-	padding: 20px;
+	padding-right: 18px;
+	padding-left: 18px;
 }
 @media(max-width: 500px){
 	.name{
-		height: 630px;
-		padding-top: 90px;
+		margin: 0px 50px 0px 50px;
+		padding-top: 40px;
+	}
+	.helloWorld{
+		font-size: 30px;
+		padding-top: 100px;
 	}
 	.myName{
-		font-size: 60px;
+		font-size: 50px;
 	}
 	.hide{
 		display: block;
 	}
-	.job a{
-		display: block;
+	.job{
+		font-size: 24px;
 	}
-	#lOne{
+	.lOne{
+		border-style: none;
+		padding-top: 10px;
+	}
+	.lTwo{
 		border-style: none;
 	}
-	#lTwo{
-		border-style: none;
+	.linkIcons{
+		margin-top: 25%;
 	}
 }
 @media(max-width:800px) {
-	.helloWorld{
-		padding-top: 20px;
-	}
-	.name{
-		height: 700px;
-	}
-	.forM{
-		margin: 170px 0px 0px 0px;
-	}
-	.hide{
-		display: block;
-	}
-	.job a{
-		display: block;
-	}
-	#lOne{
-		border-style: none;
-	}
-	#lTwo{
-		border-style: none;
-	}
 }

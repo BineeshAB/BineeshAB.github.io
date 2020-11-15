@@ -10,11 +10,11 @@
 
 **/
 .education{
-	height: auto;
 	background-color: #f7f7f7;
+	padding-bottom: 70px;
 }
 .courseTitle{
-	padding: 120px 0px 50px 0px; 
+	padding-top: 70px;
 	text-align: center;
 	font-family: Arial;
 	font-weight: bold;
@@ -23,31 +23,22 @@
 }
 .courseContent{
 	margin: 0px 150px 0px 150px;
-	padding-bottom: 100px;
+	padding-top: 50px;
 }
 .mycourses:after{
 	content: "";
 	display: table;
 	clear: both;
 }
-.mycourses{
-	padding-top: 10px; 
-}
 .courseDetails{
 	float: left;
 	width: 30%;
-	margin-top: 10px;
-	padding: 5px 55px 5px 5px;
 	text-align: right;
-	border-style: hidden solid hidden hidden ;
+	border-style: hidden solid hidden hidden;
 	border-width: 2px;
 	border-color: grey;
-}
-.schoolDetails{
-	float: left;
-	width: 70%;
-	margin-top: 10px;
-	padding: 5px 55px 5px 55px;
+	padding: 20px 50px 20px 20px;
+
 }
 .course{
 	font-family: Arial;
@@ -56,8 +47,14 @@
 }
 .courseCY{
 	font-family: Arial;
+	font-weight: bold;
 	font-size: 18px;
 	color: #808080;
+}
+.schoolDetails{
+	float: left;
+	width: 70%;
+	padding: 20px 20px 20px 50px;
 }
 .schoolName{
 	font-family: Arial;
@@ -69,37 +66,40 @@
 	color: #808080;
 }
 @media(max-width: 500px){
-	.courseContent{
-		margin: 00px 60px 00px 60px;
-
+	.courseTitle{
+		font-size: 18px;
+		padding-bottom: 50px;
 	}
-	.mycourses{
+	.courseContent{
+		margin: 0px 40px 0px 40px;
+		padding: 0px 0px 0px 20px;
 		border-style: hidden hidden hidden solid;
 		border-width: 2px;
 		border-color: grey;
-		padding-top: 0px;
-		padding-left: 50px;
 	}
-	.courseDetails{
+	.courseDetails{		
 		width: 100%;
 		text-align: left;
 		border: none;
-		margin-top: 30px;
+		padding: 0px;
+	}
+	.course{
+		font-size: 18px;
+	}
+	.courseCY{
+		font-size: 16px;
 	}
 	.schoolDetails{
 		width: 100%;
-		padding: 0px 0px 0px 30px;
+		padding: 20px 0px 20px 20px;
+	}
+	.schoolName{
+		font-size: 18px;
+	}
+	.placeOS{
+		font-size: 18px;
 	}
 }
 @media(max-width:800px) {
-	.courseContent{
-		margin: 5px 90px 70px 90px;
-	}
-	.courseDetails{
-		padding: 0px 30px 0px 0px;
-	}
-	.schoolDetails{
-		border: none;
-		padding: 0px 0px 0px 30px;
-	}
+	
 }
