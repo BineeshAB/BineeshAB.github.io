@@ -12,7 +12,7 @@
 }
 @font-face{
 	font-family: 'mySpantaran';
-	src: url("fonts/fonts/Spantaran.ttf"), url("fonts/fonts/SpantaranT.otf"), url("fonts/fonts/SpantaranTh.woff");
+	src: url("fonts/fonts/spantaran.ttf"), url("fonts/fonts/spantaran-t.otf"), url("fonts/fonts/spantaran-th.woff");
 }
 .header{
 	position: fixed;
