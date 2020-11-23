@@ -7,13 +7,12 @@
 	color: #e60039; pinkish red
 **/
 @font-face{
-	font-family: myChopsic;
-	src: url(fonts/fonts/Chopsic.ttf);
-	src: url(fonts/fonts/Spantaran.ttf);
+	font-family: 'myChopsic';
+	src: url("fonts/fonts/Chopsic.ttf");
 }
 @font-face{
-	font-family: mySpantaran;
-	src: url(fonts/fonts/Spantaran.ttf);
+	font-family: 'mySpantaran';
+	src: url("fonts/fonts/Spantaran.ttf"), url("fonts/fonts/SpantaranT.otf"), url("fonts/fonts/SpantaranTh.woff");
 }
 .header{
 	position: fixed;
@@ -31,7 +30,7 @@
 	margin-left: 15px; 
 }
 .logo a{
-	font-family: mySpantaran, Arial;
+	font-family: "mySpantaran", "Arial";
 	text-decoration: none;
 	color: #ffffff;
 }
