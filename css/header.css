@@ -6,6 +6,15 @@
 	color: #1a1a1a; dark grey
 	color: #e60039; pinkish red
 **/
+@font-face{
+	font-family: myChopsic;
+	src: url(fonts/fonts/Chopsic.ttf);
+	src: url(fonts/fonts/Spantaran.ttf);
+}
+@font-face{
+	font-family: mySpantaran;
+	src: url(fonts/fonts/Spantaran.ttf);
+}
 .header{
 	position: fixed;
 	z-index: 1;
@@ -18,11 +27,11 @@
 }
 .logo{
 	color: white;
-	font-family: first job;
 	font-size: 24px;
 	margin-left: 15px; 
 }
 .logo a{
+	font-family: mySpantaran, Arial;
 	text-decoration: none;
 	color: #ffffff;
 }

@@ -11,7 +11,6 @@ body {
 }
 .home{
 	height: 100%;
-	width: auto;
 	background-color: #1a1a1a;
 }
 .name{
@@ -35,7 +34,6 @@ body {
 	color: #e60039;
 }
 .myName{
-	padding-top: 10px;
 	text-align: center;
 	font-family: Bahnschrift;
 	font-weight: bold;
@@ -46,7 +44,6 @@ body {
 	display: none;
 }
 .job{
-	padding-top: 10px;
 	text-align: center;
 	font-family: Arial;
 	font-size: 30px;
@@ -55,22 +52,18 @@ body {
 
 .lOne{
 	border-style: hidden solid hidden solid;
-	padding-left: 10px;
-	padding-right: 10px;
+	padding-right: 18px;
+	padding-left: 18px;
 }
 .lTwo{
 	border-style: hidden solid hidden hidden;
-	padding-left: 10px;
-	padding-right: 10px;
+	padding-right: 18px;
+	padding-left: 18px;
 }
 .linkIcons{
 	position: absolute;
 	bottom: 40px;
 	left: 50%;
-	-webkit-transform: translate(-50%, -50%);
-	-moz-transform: translate(-50%, -50%);
-	-o-transform: translate(-50%, -50%);
-	-ms-transform: translate(-50%, -50%);
 	transform: translate(-50%, -50%);
 	text-align: center;
 }
@@ -78,30 +71,30 @@ body {
 	text-decoration: none;
 	font-size: 22px;
 	color: #ffffff;
-	padding-right: 18px;
-	padding-left: 18px;
+	padding-right: 15px;
+	padding-left: 15px;
 }
 @media(max-width: 500px){
 	.name{
 	}
 	.helloWorld{
-		font-size: 30px;
+		font-size: 22px;
 	}
 	.myName{
-		font-size: 50px;
-	}
-	.hide{
-		display: block;
+		font-size: 45px;
+		padding-top: 10px;
 	}
 	.job{
-		font-size: 24px;
+		font-size: 22px;
+		padding-top: 10px;
 	}
 	.lOne{
 		border-style: none;
-		padding-top: 10px;
+		padding: 0px;
 	}
 	.lTwo{
 		border-style: none;
+		padding: 0px;
 	}
 	.linkIcons{
 		margin-top: 25%;
@@ -109,6 +102,20 @@ body {
 	.breakT{
 		display: block;
 	}
+	.linkIcons a{
+		font-size: 18px;
+	}
 }
 @media(max-width:800px) {
+	.lOne{
+		border-style: none;
+		padding: 0px;
+	}
+	.lTwo{
+		border-style: none;
+		padding: 0px;
+	}
+	.breakT{
+		display: block;
+	}
 }
