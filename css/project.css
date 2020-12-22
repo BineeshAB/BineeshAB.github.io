@@ -77,7 +77,16 @@
 	padding-top: 20px;
 	padding-bottom: 10px;
 }
-@media(max-width: 500px){
+@media(max-width: 1200px){
+}
+@media(max-width: 992px){
+}
+@media(max-width: 768px){
+	.projectDetails{
+		margin: 0px 70px 0px 70px;
+	}
+}
+@media(max-width: 540px){
 	.projectDetails{
 		margin: 0px 40px 0px 40px;
 		padding-bottom: 30px;
@@ -104,6 +113,8 @@
 		font-size: 16px;
 	}
 }
-@media(max-width:800px) {
-	
+@media(max-height: 540px){
+	.projectDetails{
+		margin: 0px 40px 0px 40px;
+	}
 }

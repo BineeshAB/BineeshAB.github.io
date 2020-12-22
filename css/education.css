@@ -23,7 +23,7 @@
 }
 .courseContent{
 	margin: 0px 150px 0px 150px;
-	padding-top: 50px;
+	padding-top: 70px;
 }
 .mycourses:after{
 	content: "";
@@ -47,7 +47,6 @@
 }
 .courseCY{
 	font-family: Arial;
-	font-weight: bold;
 	font-size: 18px;
 	color: #808080;
 }
@@ -65,7 +64,16 @@
 	font-size: 18px;
 	color: #808080;
 }
-@media(max-width: 500px){
+@media(max-width: 1200px){
+}
+@media(max-width: 992px){
+}
+@media(max-width: 768px){
+	.courseContent{
+		margin: 0px 70px 0px 70px;
+	}
+}
+@media(max-width: 540px){
 	.courseTitle{
 		font-size: 18px;
 		padding-bottom: 50px;
@@ -100,6 +108,21 @@
 		font-size: 18px;
 	}
 }
-@media(max-width:800px) {
-	
+@media(max-height: 540px){
+	.courseContent{
+		margin: 0px 40px 0px 40px;
+		padding: 50px 0px 0px 20px;
+	}
+	.course{
+		font-size: 18px;
+	}
+	.courseCY{
+		font-size: 16px;
+	}
+	.schoolName{
+		font-size: 18px;
+	}
+	.placeOS{
+		font-size: 18px;
+	}
 }

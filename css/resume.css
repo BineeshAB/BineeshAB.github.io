@@ -51,7 +51,13 @@
 .downloadBtn:hover{
 	background-color: #ffffff;
 }
-@media(max-width: 500px){
+@media(max-width: 1200px){
+}
+@media(max-width: 992px){
+}
+@media(max-width: 768px){
+}
+@media(max-width: 540px){
 	.resumeContent{
 		margin: 0px 40px 70px 40px;
 	}
@@ -62,6 +68,11 @@
 		font-size: 14px;
 	}
 }
-@media(max-width:800px) {
-	
+@media(max-height: 540px){
+	.resumeContent{
+		margin: 0px 40px 70px 40px;
+	}
+	.resumeDescrpition{
+		font-size: 24px;
+	}
 }

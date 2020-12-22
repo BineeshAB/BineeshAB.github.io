@@ -50,7 +50,29 @@
 	border-width: 2px;
 	border-color: grey;
 }
-@media(max-width: 500px){
+@media(max-width: 1200px){
+}
+@media(max-width: 992px){
+}
+@media(max-width: 768px){
+	.introduction{
+		margin: 0px 70px 100px 70px;
+	}
+	.description{
+		padding: 0px 0px 0px 40px;
+	}
+	.nav{
+		position: relative;
+		left: 0px;
+		top: 80px;
+		padding: 0px;
+	}
+	.nav img{
+		margin: 0px;
+		padding: 0px;
+	}
+}
+@media(max-width: 540px){
 	.introduction{
 		margin: 0px 40px 70px 40px;
 	}
@@ -68,16 +90,35 @@
 	}
 	.nav img{
 		margin: 0px;
+		padding: 0px;
+		margin-top: -50px;
 		width: 90px;
 		height: 90px;
 	}
 	.description {
+		margin-top: 50px;
 		width: 100%;
 		padding: 0px;
 		font-size: 18px; 
 		border: none;
 	}
 }
-@media(max-width: 800px){
-
+@media(max-height: 540px){
+	.introduction{
+		margin: 0px 30px 70px 0px;
+	}
+	.description{
+		font-size: 22px;
+		padding: 0px 0px 20px 20px;
+	}
+	.nav{
+		padding: 0px;
+		text-align: center;
+	}
+	.nav img{
+		position: relative;
+		margin: 0px; 
+		width: 90px;
+		height: 90px;
+	}
 }
