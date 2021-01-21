@@ -49,6 +49,7 @@
 	border-style: hidden hidden hidden solid;
 	border-width: 2px;
 	border-color: grey;
+	text-align:justify;
 }
 @media(max-width: 1200px){
 }
@@ -91,12 +92,12 @@
 	.nav img{
 		margin: 0px;
 		padding: 0px;
-		margin-top: -80px;
+		margin-top: -90px;
 		width: 90px;
 		height: 90px;
 	}
 	.description {
-		margin-top: 80px;
+		margin-top: 70px;
 		width: 100%;
 		padding: 0px;
 		font-size: 18px; 

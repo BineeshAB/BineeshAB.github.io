@@ -33,14 +33,12 @@
 	<body>
 
 		<div class="header" id="myHeader">
-			<div class="over">
-				<span class="logo">
-					<span class="navStyle">
-						<span class="navColor" onclick="openNav()">&#9776;</span>
-						<a href="">BINEESH<span class="logoColor">AB</span></a>
-					</span>
-				</span id="logo">
-			</div>
+			<span class="logo">
+				<span class="navStyle">
+					<span class="navColor" onclick="openNav()">&#9776;</span>
+					<a href="">BINEESH<span class="logoColor">AB</span></a>
+				</span>
+			</span>
 		</div>
 
 		<div id="mySidenav" class="sidenav">
@@ -54,14 +52,14 @@
 			<a href="#project2" onclick="closeNav()">Project</a>
 		</div>
 
-		<section class="home" id="home2">
+		<section class="home" id="home2" style="background-image: url('image/earth.jpg');background-repeat: no-repeat;background-size: cover;background-position: center center; background-attachment: fixed;">
 			<div class="name">
 				<div class="myDesc">
 					<div class="helloWorld" >
-						Hello,
+						Hello!
 					</div>
 					<div class="myName">
-						I am <br class="breakT"> Bineesh Alakkal
+						I AM <br class="breakT"> BINEESH ALAKKAL
 					</div>
 					<div class="job">
 						<span class="lOne">Web Developer</span>
@@ -329,9 +327,13 @@
 
 		<script type="text/javascript">
 			function openNav() {
-				let query = window.matchMedia("(max-width: 500px)");
-				if(query.matches){
+				let five = window.matchMedia("(max-width: 500px)");
+				let seven = window.matchMedia("(max-width: 768px)");
+				if(five.matches){
 					document.getElementById("mySidenav").style.width = "60%";
+				}
+				else if(seven.matches){
+					document.getElementById("mySidenav").style.width = "25%";
 				}
 				else{
 					document.getElementById("mySidenav").style.width = "17%";

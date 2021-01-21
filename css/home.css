@@ -11,10 +11,9 @@ body {
 }
 .home{
 	height: 100%;
-	background-color: #1a1a1a;
+	/*background-color: #1a1a1a;*/
 }
-.name{
-	
+.name{	
 }
 .myDesc{
 	position: absolute;
@@ -37,7 +36,7 @@ body {
 	text-align: center;
 	font-family: Bahnschrift;
 	font-weight: bold;
-	font-size: 70px;
+	font-size: 60px;
 	color: #ffffff;
 }
 .breakT{
@@ -74,7 +73,24 @@ body {
 	padding-right: 15px;
 	padding-left: 15px;
 }
-@media(max-width: 500px){
+@media(max-width: 1200px){
+}
+@media(max-width: 992px){
+}
+@media(max-width: 768px){
+	.lOne{
+		border-style: none;
+		padding: 0px;
+	}
+	.lTwo{
+		border-style: none;
+		padding: 0px;
+	}
+	.breakT{
+		display: block;
+	}
+}
+@media(max-width: 540px){
 	.name{
 	}
 	.helloWorld{
@@ -108,7 +124,7 @@ body {
 		padding-left: 10px;
 	}
 }
-@media(max-height: 500px){
+@media(max-height: 540px){
 	.home{
 		height: 760px;
 	}
@@ -126,18 +142,5 @@ body {
 	}
 	.linkIcons{
 		top: 690px;
-	}
-}
-@media(max-width:800px) {
-	.lOne{
-		border-style: none;
-		padding: 0px;
-	}
-	.lTwo{
-		border-style: none;
-		padding: 0px;
-	}
-	.breakT{
-		display: block;
 	}
 }
