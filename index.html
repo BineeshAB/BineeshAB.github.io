@@ -30,24 +30,35 @@
 
 	</head>
 
-	<body>
+	<body onload="move()">
 
 		<div class="header" id="myHeader">
-			<span class="logo">
+			<div class="logo">
 				<span class="navStyle">
 					<span class="navColor" onclick="openNav()">&#9776;</span>
 					<a href="">BINEESH<span class="logoColor">AB</span></a>
 				</span>
+			</div>
+			<span class="downloadCVHeader">
+				<a href="document/bineeshabresume.pdf" target="_blank">
+					<button class="downloadCVBtn">Download CV</button>
+				</a>
 			</span>
+			<div id="progressBar" class="progressBar">
+				<div id="myProgress" class="myProgress">
+					<div id="myBar" class="myBar">
+					</div>
+				</div>
+			</div>
 		</div>
 
 		<div id="mySidenav" class="sidenav">
 			<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
 			<a href="#home2" onclick="closeNav()">Home</a>
 			<a href="#about2" onclick="closeNav()">About</a>
-			<a href="#experience2" onclick="closeNav()">Experience</a>
 			<a href="#profile2" onclick="closeNav()">Profile</a>
 			<a href="#education2" onclick="closeNav()">Education</a>
+			<a href="#experience2" onclick="closeNav()">Experience</a>
 			<a href="#resume2" onclick="closeNav()">Resume</a>
 			<a href="#project2" onclick="closeNav()">Project</a>
 		</div>
@@ -92,32 +103,6 @@
 					<p>
 						My name is <b>Bineesh Alakkal</b> and I'm <b><span id="mdob"></span></b> years old. I'm a <b>Web Developer</b> and a <b>Web Designer</b>. I have also skilled in various programming language like <b>JAVA</b>, <b>Android Development</b> and <b>MySQL</b>. And I have Completed my <b>B.Sc.</b> Graduation in <b>Computer Science</b>.
 					</p>
-				</div>
-			</div>
-		</section>
-
-		<section class="experience" id="experience2">
-			<div class="workEx">
-				<p class="workTitle">
-					Work Experience
-				</p>
-				<div class="workedCompany">
-					<div class="companyList">
-						<div class="companyName">
-							BINEESHAB
-						</div>
-						<br>
-						<div class="workedYear">
-							January 2020 - Present
-						</div>
-					</div>
-					<div class="workList">
-						<ul>
-							<li>
-								Built websites for final year students.
-							</li>
-						</ul>
-					</div>
 				</div>
 			</div>
 		</section>
@@ -269,6 +254,32 @@
 			</div>
 		</section>
 
+		<section class="experience" id="experience2">
+			<div class="workEx">
+				<p class="workTitle">
+					Work Experience
+				</p>
+				<div class="workedCompany">
+					<div class="companyList">
+						<div class="companyName">
+							BINEESHAB
+						</div>
+						<br>
+						<div class="workedYear">
+							January 2020 - Present
+						</div>
+					</div>
+					<div class="workList">
+						<ul>
+							<li>
+								Built websites for final year students.
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</section>
+
 		<section class="resume" id="resume2">
 			<p class="resumeTitle">
 				Resume
@@ -326,6 +337,22 @@
 		</div>
 
 		<script type="text/javascript">
+
+			function move() {
+				var elem = document.getElementById("myBar");
+				var width = 0;
+				var id = setInterval(frame,10);
+				function frame() {
+					if (width >= 100) {
+						clearInterval(id);
+						document.getElementById("progressBar").style.display = "none";
+					} else {
+						width++; 
+						elem.style.width = width + '%';
+					}
+				}
+			}
+
 			function openNav() {
 				let five = window.matchMedia("(max-width: 500px)");
 				let seven = window.matchMedia("(max-width: 768px)");

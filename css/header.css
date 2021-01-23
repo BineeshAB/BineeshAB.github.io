@@ -16,20 +16,16 @@
 }
 .header{
 	position: fixed;
-	overflow: hidden;
 	z-index: 1;
 	display: block;
 	width: 100%;
 	top: 0;
-	padding: 10px 16px;
 	background: #1a1a1a;
-	border-radius: 0px 0px 10px 10px;
-
 }
 .logo{
+	padding: 10px 20px 8px 20px;
 	color: white;
 	font-size: 24px;
-	margin: 15px;
 }
 .logo a{
 	font-family: "mySpantaran", "Arial";
@@ -41,4 +37,59 @@
 }
 .sticky {
   box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.2), 0 4px 15px 0 rgba(0, 0, 0, 0.10);
+}
+.downloadCVHeader{
+	margin-top: -50px;
+	margin-right: 20px;
+	padding: 5px 0px;
+	float: right;
+	top: 0px;
+}
+.downloadCVBtn{
+	background-color: #1a1a1a;
+	color: #e60039;
+	padding: 7px 15px;
+	text-align: center;
+	display: inline-block;
+	font-size: 16px;
+	margin: 4px 2px;
+	cursor: pointer;
+	border: 2px solid #e60039;
+	font-family: Arial;
+	font-weight: bold;
+}
+.downloadCVBtn a{
+	text-decoration: none;
+}
+.downloadCVBtn:hover{
+	background-color: #ffffff;
+}
+.progressBar{
+
+}
+.myProgress {
+	position: absolute;
+	bottom: 0px;
+	width: 100%;
+	overflow: hidden;
+	border-radius: 2px;
+	background-color: #1a1a1a;
+}
+.myBar {
+	width: 0%;
+	height: 3px;
+	background-color: #e60039;
+}
+@media(max-width: 1200px){
+}
+@media(max-width: 992px){
+}
+@media(max-width: 768px){
+}
+@media(max-width: 540px){
+	.downloadCVHeader{
+		display: none;
+	}
+}
+@media(max-height: 540px){
 }

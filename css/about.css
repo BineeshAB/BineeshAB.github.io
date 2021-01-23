@@ -45,7 +45,9 @@
 	float: left;
 	width: 75%;
 	padding: 0px 20px 20px 50px;
-	font-size: 28px;
+	font-family: Arial;
+	color: #404040;
+	font-size: 26px;
 	border-style: hidden hidden hidden solid;
 	border-width: 2px;
 	border-color: grey;
@@ -92,12 +94,12 @@
 	.nav img{
 		margin: 0px;
 		padding: 0px;
-		margin-top: -90px;
+		margin-top: -80px;
 		width: 90px;
 		height: 90px;
 	}
 	.description {
-		margin-top: 70px;
+		margin-top: 80px;
 		width: 100%;
 		padding: 0px;
 		font-size: 18px; 

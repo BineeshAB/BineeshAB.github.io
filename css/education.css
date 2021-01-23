@@ -10,7 +10,6 @@
 
 **/
 .education{
-	background-color: #f7f7f7;
 	padding-bottom: 70px;
 }
 .courseTitle{
@@ -58,11 +57,12 @@
 .schoolName{
 	font-family: Arial;
 	font-weight: bold;
-	font-size: 20px;
+	font-size: 22px;
 }
 .placeOS{
 	font-size: 18px;
-	color: #808080;
+	font-family: Arial;
+	color: #404040;
 }
 @media(max-width: 1200px){
 }
