@@ -44,7 +44,7 @@
 	font-weight: bold;
 	font-size: 20px;
 }
-.myFullName, .myDOB, .myJob, .myMailID{
+.myFullName, .myDOB, .myJob, .myMailID, .myWebsite{
 	padding-bottom: 20px;
 }
 .myTitle{
@@ -56,6 +56,14 @@
 	font-family: Arial;
 	font-size: 16px;
 	padding-top: 5px;
+}
+.myDetail a{
+	text-decoration: none;
+	color: #e60039;
+}
+.myDetail a:hover{
+	text-decoration: none;
+	color: #009de6;
 }
 .programmingSkills{
 	float: left;

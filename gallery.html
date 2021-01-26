@@ -1,0 +1,341 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+
+		<title>
+			Portfolio - BineeshAB
+		</title>
+		<style type="text/css">
+			html{
+				scroll-behavior: smooth;
+			}
+		</style>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+		<link rel="icon" type="image/png" href="image/ablogo.png">
+
+		<link rel="stylesheet" href="css/header.css">
+		<link rel="stylesheet" href="css/footer.css">
+		<link rel="stylesheet" href="css/slide.css">
+
+		<link rel="stylesheet" href="css/gallery.css">
+
+		<link href="fonts/css/font.min.css" rel="stylesheet" type="text/css">
+
+	</head>
+
+	<body onload="move()">
+
+		<div class="header" id="myHeader">
+			<div class="logo">
+				<span class="navStyle">
+					<span class="navColor" onclick="openNav()">&#9776;</span>
+					<a href="index.html">BINEESH<span class="logoColor">AB</span></a>
+				</span>
+			</div>
+			<span class="downloadCVHeader">
+				<a href="document/bineeshabresume.pdf" target="_blank">
+					<button class="downloadCVBtn">Download CV</button>
+				</a>
+			</span>
+			<div id="progressBar" class="progressBar">
+				<div id="myProgress" class="myProgress">
+					<div id="myBar" class="myBar">
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div id="mySidenav" class="sidenav">
+			<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+			<a href="index.html#home2" onclick="closeNav()">Home</a>
+			<a href="index.html#about2" onclick="closeNav()">About</a>
+			<a href="index.html#profile2" onclick="closeNav()">Profile</a>
+			<a href="index.html#education2" onclick="closeNav()">Education</a>
+			<a href="index.html#experience2" onclick="closeNav()">Experience</a>
+			<a href="index.html#resume2" onclick="closeNav()">Resume</a>
+			<a href="index.html#project2" onclick="closeNav()">Project</a>
+		</div>
+
+		<section class="gallery" id="galley">
+			<div class="content">
+				<div class="galleyTitle">
+					Photographs
+				</div>
+				<div class="myPhotograhy">
+					<div class="photos">
+						<a href="#lightBox1"><img src="photography/one.jpg" alt="One" class="myImages"></a>
+					</div>
+					<div class="photos">
+						<a href="#lightBox2"><img src="photography/two.jpg" alt="Two" class="myImages"></a>
+					</div>
+					<div class="photos">
+						<a href="#lightBox3"><img src="photography/three.jpg" alt="Three" class="myImages"></a>
+					</div>
+					<div class="photos">
+						<a href="#lightBox4"><img src="photography/four.jpg" alt="Four" class="myImages"></a>
+					</div>
+					<div class="photos">
+						<a href="#lightBox5"><img src="photography/five.jpg" alt="Five" class="myImages"></a>
+					</div>
+					<div class="photos">
+						<a href="#lightBox6"><img src="photography/six.jpg" alt="Six" class="myImages"></a>
+					</div>
+					<div class="photos">
+						<a href="#lightBox7"><img src="photography/seven.jpg" alt="Seven" class="myImages"></a>
+					</div>
+					<div class="photos">
+						<a href="#lightBox8"><img src="photography/eight.jpg" alt="Eight" class="myImages"></a>
+					</div>
+					<div class="photos">
+						<a href="#lightBox9"><img src="photography/nine.jpg" alt="Nine" class="myImages"></a>
+					</div>
+					<div class="photos">
+						<a href="#lightBox10"><img src="photography/ten.jpg" alt="Ten" class="myImages"></a>
+					</div>
+					<div class="photos">
+						<a href="#lightBox11"><img src="photography/eleven.jpg" alt="Eleven" class="myImages"></a>
+					</div>
+				</div>
+			</div>
+			<div class="lightBox"  id="lightBox1">
+				<div class="box">
+					<div class="boxHeader">
+						<div class="imgTitle">Image One</div>
+						<a href="" class="cross">X</a>
+					</div>
+					<div class="imageContent">
+						<img src="photography/one.jpg" alt="One" class="lightImages">
+					</div>
+					<div class="boxFooter">
+						<a href="#lightBox11" class="prev"> < </a>
+						<a href="#lightBox2" class="next"> > </a>
+					</div>
+				</div>
+			</div>
+			<div class="lightBox"  id="lightBox2">
+				<div class="box">
+					<div class="boxHeader">
+						<div class="imgTitle">Image Two</div>
+						<a href="#" class="cross">X</a>
+					</div>
+					<div class="imageContent">
+						<img src="photography/two.jpg" alt="One" class="lightImages">
+					</div>
+					<div class="boxFooter">
+						<a href="#lightBox1" class="prev"> < </a>
+						<a href="#lightBox3" class="next"> > </a>
+					</div>
+				</div>
+			</div>
+			<div class="lightBox"  id="lightBox3">
+				<div class="box">
+					<div class="boxHeader">
+						<div class="imgTitle">Image Three</div>
+						<a href="#" class="cross">X</a>
+					</div>
+					<div class="imageContent">
+						<img src="photography/three.jpg" alt="One" class="lightImages">
+					</div>
+					<div class="boxFooter">
+						<a href="#lightBox2" class="prev"> < </a>
+						<a href="#lightBox4" class="next"> > </a>
+					</div>
+				</div>
+			</div>
+			<div class="lightBox"  id="lightBox4">
+				<div class="box">
+					<div class="boxHeader">
+						<div class="imgTitle">Image Four</div>
+						<a href="#" class="cross">X</a>
+					</div>
+					<div class="imageContent">
+						<img src="photography/four.jpg" alt="One" class="lightImages">
+					</div>
+					<div class="boxFooter">
+						<a href="#lightBox3" class="prev"> < </a>
+						<a href="#lightBox5" class="next"> > </a>
+					</div>
+				</div>
+			</div>
+			<div class="lightBox"  id="lightBox5">
+				<div class="box">
+					<div class="boxHeader">
+						<div class="imgTitle">Image Five</div>
+						<a href="#" class="cross">X</a>
+					</div>
+					<div class="imageContent">
+						<img src="photography/five.jpg" alt="One" class="lightImages">
+					</div>
+					<div class="boxFooter">
+						<a href="#lightBox4" class="prev"> < </a>
+						<a href="#lightBox6" class="next"> > </a>
+					</div>
+				</div>
+			</div>
+			<div class="lightBox"  id="lightBox6">
+				<div class="box">
+					<div class="boxHeader">
+						<div class="imgTitle">Image Six</div>
+						<a href="#" class="cross">X</a>
+					</div>
+					<div class="imageContent">
+						<img src="photography/six.jpg" alt="One" class="lightImages">
+					</div>
+					<div class="boxFooter">
+						<a href="#lightBox5" class="prev"> < </a>
+						<a href="#lightBox7" class="next"> > </a>
+					</div>
+				</div>
+			</div>
+			<div class="lightBox"  id="lightBox7">
+				<div class="box">
+					<div class="boxHeader">
+						<div class="imgTitle">Image Seven</div>
+						<a href="#" class="cross">X</a>
+					</div>
+					<div class="imageContent">
+						<img src="photography/seven.jpg" alt="One" class="lightImages">
+					</div>
+					<div class="boxFooter">
+						<a href="#lightBox6" class="prev"> < </a>
+						<a href="#lightBox8" class="next"> > </a>
+					</div>
+				</div>
+			</div>
+			<div class="lightBox"  id="lightBox8">
+				<div class="box">
+					<div class="boxHeader">
+						<div class="imgTitle">Image Elight</div>
+						<a href="#" class="cross">X</a>
+					</div>
+					<div class="imageContent">
+						<img src="photography/eight.jpg" alt="One" class="lightImages">
+					</div>
+					<div class="boxFooter">
+						<a href="#lightBox7" class="prev"> < </a>
+						<a href="#lightBox9" class="next"> > </a>
+					</div>
+				</div>
+			</div>
+			<div class="lightBox"  id="lightBox9">
+				<div class="box">
+					<div class="boxHeader">
+						<div class="imgTitle">Image Nine</div>
+						<a href="#" class="cross">X</a>
+					</div>
+					<div class="imageContent">
+						<img src="photography/nine.jpg" alt="One" class="lightImages">
+					</div>
+					<div class="boxFooter">
+						<a href="#lightBox8" class="prev"> < </a>
+						<a href="#lightBox10" class="next"> > </a>
+					</div>
+				</div>
+			</div>
+			<div class="lightBox"  id="lightBox10">
+				<div class="box">
+					<div class="boxHeader">
+						<div class="imgTitle">Image Ten</div>
+						<a href="#" class="cross">X</a>
+					</div>
+					<div class="imageContent">
+						<img src="photography/ten.jpg" alt="One" class="lightImages">
+					</div>
+					<div class="boxFooter">
+						<a href="#lightBox9" class="prev"> < </a>
+						<a href="#lightBox11" class="next"> > </a>
+					</div>
+				</div>
+			</div>
+			<div class="lightBox"  id="lightBox11">
+				<div class="box">
+					<div class="boxHeader">
+						<div class="imgTitle">Image Eleven</div>
+						<a href="#" class="cross">X</a>
+					</div>
+					<div class="imageContent">
+						<img src="photography/eleven.jpg" alt="One" class="lightImages">
+					</div>
+					<div class="boxFooter">
+						<a href="#lightBox10" class="prev"> < </a>
+						<a href="#lightBox1" class="next"> > </a>
+					</div>
+				</div>
+			</div>
+
+		</section>
+
+		<div class="footer">
+			<p>@ Copyright Reserved <span id="year"></span></p>
+		</div>
+
+		<script type="text/javascript">
+
+			function move() {
+				var elem = document.getElementById("myBar");
+				var width = 0;
+				var id = setInterval(frame,10);
+				function frame() {
+					if (width >= 100) {
+						clearInterval(id);
+						document.getElementById("progressBar").style.display = "none";
+					} else {
+						width++; 
+						elem.style.width = width + '%';
+					}
+				}
+			}
+
+			function openNav() {
+				let five = window.matchMedia("(max-width: 500px)");
+				let seven = window.matchMedia("(max-width: 768px)");
+				if(five.matches){
+					document.getElementById("mySidenav").style.width = "60%";
+				}
+				else if(seven.matches){
+					document.getElementById("mySidenav").style.width = "25%";
+				}
+				else{
+					document.getElementById("mySidenav").style.width = "17%";
+				}
+			}
+			function closeNav() {
+				document.getElementById("mySidenav").style.width = "0";
+			}
+
+			window.onscroll = function() {myFunction()};
+
+			var header = document.getElementById("myHeader");
+			var sticky = header.offsetTop;
+
+			function myFunction() {
+				if (window.pageYOffset > sticky) {
+					header.classList.add("sticky");
+				} else {
+					header.classList.remove("sticky");
+				}
+			}
+
+			var d = new Date();
+			var y = d.getFullYear();
+			var m = d.getMonth() + 1;
+			var day = d.getDate();
+	  
+			var mdob = y - 1999;
+			if(m == 5){
+				if(day < 22){
+					document.getElementById("mdob").innerHTML = mdob - 1;
+				} else if(day >= 22){
+					document.getElementById("mdob").innerHTML = mdob;
+				}			
+			} else if(m < 5){
+				document.getElementById("mdob").innerHTML = mdob - 1;
+			} else if(m > 5 ){
+				document.getElementById("mdob").innerHTML = mdob;
+			}
+			document.getElementById("year").innerHTML = y;
+		</script>
+	</body>
+</html>
