@@ -1,286 +1,72 @@
+<!-- <!DOCTYPE html> -->
 <html>
 	<head>
+		<title>Portfolio - Bineesh</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-		<title>
-			Portfolio - BineeshAB
-		</title>
+		<link rel="stylesheet" href="css/bootstrap.css">
+		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="css/header.css">
+		<link rel="stylesheet" href="css/footer.css">
+
+		<link rel="stylesheet" href="css/sidebar.css">
+
+		<link rel="stylesheet" href="css/home.css">
+		<link rel="stylesheet" href="css/about.css">
+		<link rel="stylesheet" href="css/profile.css">
+		<link rel="stylesheet" href="css/education.css">
+		<link rel="stylesheet" href="css/experience.css">
+		<link rel="stylesheet" href="css/project.css">
+
+		<!-- <link rel="stylesheet" href="css/darkmode.css"> -->
+
+		<link href="fonts/css/font.min.css" rel="stylesheet" type="text/css">
+
 		<style type="text/css">
 			html{
 				scroll-behavior: smooth;
 			}
 		</style>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-		<link rel="icon" type="image/png" href="image/ablogo.png">
-
-		<link rel="stylesheet" href="css/header.css">
-		<link rel="stylesheet" href="css/footer.css">
-		<link rel="stylesheet" href="css/slide.css">
-
-		<link rel="stylesheet" href="css/home.css">
-		<link rel="stylesheet" href="css/about.css">
-		<link rel="stylesheet" href="css/experience.css">
-		<link rel="stylesheet" href="css/profile.css">
-		<link rel="stylesheet" href="css/education.css">
-		<link rel="stylesheet" href="css/resume.css">
-		<link rel="stylesheet" href="css/project.css">
-
-		<link href="fonts/css/font.min.css" rel="stylesheet" type="text/css">
 
 	</head>
+	<body>
 
-	<body onload="move()">
-
-		<div class="header" id="myHeader">
-			<div class="logo">
-				<span class="navStyle">
-					<span class="navColor" onclick="openNav()">&#9776;</span>
-					<a href="">BINEESH<span class="logoColor">AB</span></a>
-				</span>
-			</div>
-			<span class="downloadCVHeader">
-				<a href="document/bineeshabresume.pdf" target="_blank">
-					<button class="downloadCVBtn">Download CV</button>
-				</a>
-			</span>
-			<div id="progressBar" class="progressBar">
-				<div id="myProgress" class="myProgress">
-					<div id="myBar" class="myBar">
-					</div>
+		<section class="header" id="header">
+			<div class="container">
+				<div class="logo">
+					<span class="bars" onclick="openNav()">&#9776;</span>
+					<a href="index.html">Bineesh<span class="ab">AB</span></a>
 				</div>
 			</div>
-		</div>
-
-		<div id="mySidenav" class="sidenav">
-			<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-			<a href="#home2" onclick="closeNav()">Home</a>
-			<a href="#about2" onclick="closeNav()">About</a>
-			<a href="#profile2" onclick="closeNav()">Profile</a>
-			<a href="#education2" onclick="closeNav()">Education</a>
-			<a href="#experience2" onclick="closeNav()">Experience</a>
-			<a href="#resume2" onclick="closeNav()">Resume</a>
-			<a href="#project2" onclick="closeNav()">Project</a>
-		</div>
-
-		<section class="home" id="home2" style="background-image: url('image/earth.jpg');background-repeat: no-repeat;background-size: cover;background-position: center center; background-attachment: fixed;">
-			<div class="name">
-				<div class="myDesc">
-					<div class="helloWorld" >
-						Hello!
-					</div>
-					<div class="myName">
-						I AM <br class="breakT"> BINEESH ALAKKAL
-					</div>
-					<div class="job">
-						<span class="lOne">Web Developer</span>
-						<br class="breakT">
-						<span class="lTwo">Web Designer</span>
-					</div>
-				</div>
-				<div class="linkIcons">
-					<a href="https://www.facebook.com/profile.php?id=100008988073916" target="_blank">
-						<i class="fa fa-facebook" aria-hidden="true"></i>
+			<!-- <label class="switch">
+				<input type="checkbox">
+				<span class="slider"></span>
+			</label> -->
+			<div class="sideBar" id="sideBar">
+				<div class="container">
+					<a href="javascript:void(0)" class="close" onclick="closeNav()">
+						<div class="closeBtn">X</div>
 					</a>
-					<a href="https://www.linkedin.com/in/bineesh-alakkal-636088200/"  target="_blank">
-						<i class="fa fa-linkedin" aria-hidden="true"></i>
-					</a>
-					<a href="https://instagram.com/bineesh_a_b?igshid=3zjpkkkhr4wr"  target="_blank">
-						<i class="fa fa-instagram" aria-hidden="true"></i>
-					</a>
-				</div>
-			</div>						
-		</section>
-
-		<section class="about" id="about2">
-			<div class="introduction">
-				<p class="aboutHeading">About</p>
-				<p class="title">Let Me Introduce Myself</p>
-				<div class="nav">
-					<img src="image/profileImage.png">
-				</div>
-				<div class="description">
-					<p>
-						My name is <b>Bineesh Alakkal</b> and I'm <b><span id="mdob"></span></b> years old. I'm a <b>Web Developer</b> and a <b>Web Designer</b>. I have also skilled in various programming language like <b>JAVA</b>, <b>Android Development</b> and <b>MySQL</b>. And I have Completed my <b>B.Sc.</b> Graduation in <b>Computer Science</b>.
-					</p>
-				</div>
-			</div>
-		</section>
-
-		<section class="profile" id="profile2">
-			<div class="profileDetails">
-				<p class="profileTitle">
-					Profile
-				</p>
-				<div class="profileList">
-					<div class="personalDetails">
-						<div class="profileHeading">
-							Personal Information
-						</div>
-						<div class="myFullName">
-							<div class="myTitle">
-								FULL NAME :
-							</div>
-							<div class="myDetail">
-								Bineesh Baby Alakkal
-							</div>
-						</div>
-						<div class="myDOB">
-							<div class="myTitle">
-								DATE OF BIRTH :
-							</div>
-							<div class="myDetail">
-								May 22, 1999
-							</div>
-						</div>
-						<div class="myJob">
-							<div class="myTitle">
-								JOB :
-							</div>
-							<div class="myDetail">
-								Web Developer and Web Designer
-							</div>
-						</div>
-						<div class="myMailID">
-							<div class="myTitle">
-								E-MAIL ADDRESS :
-							</div>
-							<div class="myDetail">
-								bineeshalakkal22@gmail.com
-							</div>
-						</div>
-						<div class="myWebsite">
-							<div class="myTitle">
-								WEBSITE :
-							</div>
-							<div class="myDetail">
-								https://bineeshab.github.io
-							</div>
-						</div>
-						<div class="myHobbies">
-							<div class="myTitle">
-								Hobbies :
-							</div>
-							<div class="myDetail">
-								Photo Editing & Photography <p><a href="gallery.html" target="_blank">View Photographs</a></p>
-							</div>
-						</div>
-					</div>
-					<div class="programmingSkills">
-						<div class="profileHeading">
-							Programming skills
-						</div>
-						<div class="skillList">
-							<ul>
-								<li>
-									HTML
-								</li>
-								<li>
-									CSS
-								</li>
-								<li>
-									JavaScript
-								</li>
-								<li>
-									PHP
-								</li>
-								<li>
-									MySQL
-								</li>
-								<li>
-									Java
-								</li>
-								<li>
-									Android Development
-								</li>
-							</ul>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-
-		<section class="education" id="education2">
-			<div class="courseTitle">
-				Education
-			</div>
-			<div class="courseContent">
-				<div class="mycourses">
-					<div class="courseDetails">
-						<div class="course">
-							B.Sc. in Computer Science
-						</div>
-						<div class="courseCY">
-							2020
-						</div>
-					</div>
-					<div class="schoolDetails">
-						<div class="schoolName">
-							V. K. Krishna Menon College
-						</div>
-						<div class="placeOS">
-							Mumbai, Maharashtra
-						</div>
-					</div>
-				</div>
-				<div class="mycourses">
-					<div class="courseDetails">
-						<div class="course">
-							H.S.C
-						</div>
-						<div class="courseCY">
-							2017
-						</div>
-					</div>
-					<div class="schoolDetails">
-						<div class="schoolName">
-							Vikas Jr. College
-						</div>
-						<div class="placeOS">
-							Mumbai, Maharashtra
-						</div>
-					</div>
-				</div>
-				<div class="mycourses">
-					<div class="courseDetails">
-						<div class="course">
-							S.S.C
-						</div>
-						<div class="courseCY">
-							2015
-						</div>
-					</div>
-					<div class="schoolDetails">
-						<div class="schoolName">
-							Vidya Mandir High School
-						</div>
-						<div class="placeOS">
-							Mumbai, Maharashtra
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-
-		<section class="experience" id="experience2">
-			<div class="workEx">
-				<p class="workTitle">
-					Work Experience
-				</p>
-				<div class="workedCompany">
-					<div class="companyList">
-						<div class="companyName">
-							BINEESHAB
-						</div>
-						<br>
-						<div class="workedYear">
-							January 2020 - Present
-						</div>
-					</div>
-					<div class="workList">
+					<div class="sideNav" id="sideNav">
 						<ul>
 							<li>
-								Built websites for final year students.
+								<a href="#home" onclick="closeNav()">Home</a>
+							</li>
+							<li>
+								<a href="#about" onclick="closeNav()">About</a>
+							</li>
+							<li>
+								<a href="#profile" onclick="closeNav()">Profile</a>
+							</li>
+							<li>
+								<a href="#education" onclick="closeNav()">Education</a>
+							</li>
+							<li>
+								<a href="#experience" onclick="closeNav()">Experience</a>
+							</li>
+							<li>
+								<a href="#project" onclick="closeNav()">Project</a>
 							</li>
 						</ul>
 					</div>
@@ -288,99 +74,443 @@
 			</div>
 		</section>
 
-		<section class="resume" id="resume2">
-			<p class="resumeTitle">
-				Resume
-			</p>
-			<div class="resumeContent">
-				<div class="resumeDescrpition">
-					Hard worker, And I always look a challenging and good opportunity to learn and adopt the new technologies for my career growth.
-
+		<section class="home" id="home" style="background-image: url('image/earth.png');background-repeat: no-repeat;background-size: cover;background-position: center center;">
+			<div class="container">
+				<div class="myTitle">
+					<div class="helloWorld">
+						Hello,
+					</div>
+					<div class="myName">
+						I'm Bineesh Alakkal
+					</div>
+					<div class="myWork">
+						I am a<span class="txt-rotate job" data-period="2000" data-rotate='[" Developer"," Desinger"]'></span>
+					</div>
 				</div>
-				<div class="downloadCV">
-					<a href="document/bineeshabresume.pdf" target="_blank">
-						<button class="downloadBtn">Download CV</button>
-					</a>
+			</div>
+			<div class="socialLink">
+				<a href="https://www.facebook.com/profile.php?id=100008988073916" target="_blank">
+					<i class="fa fa-facebook" aria-hidden="true"></i>
+				</a>
+				<a href="https://www.linkedin.com/in/bineesh-alakkal-636088200/"  target="_blank">
+					<i class="fa fa-linkedin" aria-hidden="true"></i>
+				</a>
+				<a href="https://instagram.com/bineesh_a_b?igshid=3zjpkkkhr4wr"  target="_blank">
+					<i class="fa fa-instagram" aria-hidden="true"></i>
+				</a>
+			</div>
+		</section>
+
+		<section class="about" id="about">
+			<div class="container">
+				<p class="aboutTitle">About</p>
+				<div class="row">
+					<div class="col-sm-4">
+						<div class="profileImage">
+							<img src="image/profileImage.png">
+						</div>
+					</div>
+					<div class="col-sm-8">
+						<p class="aboutHeadline">Web Developer And Web Designer</p>
+						<div class="description">
+							<p>
+								My name is <span style="color: #418dd9;">Bineesh Alakkal</span> and I'm <span style="color: #418dd9;"><span id="mdob"></span></span> years old. Hard worker, And I always look a challenging and good opportunity to learn and adopt the new technologies for my career growth.
+							</p>
+						</div>
+						<div class="downloadCV">
+							<a href="document/bineeshabresume.pdf" target="_blank">
+								<button class="downloadBtn">Download CV</button>
+							</a>
+						</div>
+					</div>
 				</div>
 			</div>
 		</section>
 
-		<section class="project" id="project2">
-			<div class="projectDetails">
-				<p class="ProjectTitle">
+		<section class="profile" id="profile">
+			<div class="container">
+				<div class="row">
+					<p class="profileTitle">Profile</p>
+					<div class="col-sm-6">
+						<div class="personalDetails">
+							<div class="profileHeadline">
+								Personal Information
+							</div>
+							<div class="profileDescritption">
+								<div class="myFullname">
+									<p>
+										<span class="personalTitle">
+											FULL NAME :<br>
+										</span>
+										<span class="personalDetail">
+											Bineesh Baby Alakkal
+										</span>
+									</p>
+								</div>
+								<div class="myResidence">
+									<p>
+										<span class="personalTitle">
+											RESIDENCE :<br>
+										</span>
+										<span class="personalDetail">
+											Mumbai, Maharashtra, India
+										</span>
+									</p>
+								</div>
+								<div class="myDOB">
+									<p>
+										<span class="personalTitle">
+											DATE OF BIRTH :<br></span>
+										<span class="personalDetail">
+											22<sup>nd</sup> May 1999
+										</span>
+									</p>
+								</div>
+								<div class="myJob">
+									<p>
+										<span class="personalTitle">
+											JOB TITLE :<br></span>
+										<span class="personalDetail">
+											Web Developer and Web Designer
+										</span>
+									</p>
+								</div>
+								<div class="myJob">
+									<p>
+										<span class="personalTitle">
+											E-MAIL ADDRESS :<br>
+										</span>
+										<span class="personalDetail">
+											bineeshalakkal22@gmail.com
+										</span>
+									</p>
+								</div>
+								<div class="myJob">
+									<p>
+										<span class="personalTitle">
+											WEBSITE :<br>
+										</span>
+										<span class="personalDetail">
+											https://bineeshab.githb.io/
+										</span>
+									</p>
+								</div>
+								<div class="myJob">
+									<p>
+										<span class="personalTitle">
+											HOBBIES :<br>
+										</span>
+										<span class="personalDetail">
+											Photo Editing & Photography<br>
+											<a href="gallery.html" target="_blank">View Photos</a>
+										</span>
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-6">
+						<div class="skillsDetails">
+							<div class="skillsHeadline">
+								Programming Skils
+							</div>
+							<div class="skillsDescritption">
+								<div class="skillBorder">
+									<div class="skillBorder">
+										<div class="skillPercentage">
+											<div class="mySkills" style="width: 90%">
+												HTML<span class="myPercentage">90%</span>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="skillBorder">
+									<div class="skillBorder">
+										<div class="skillPercentage">
+											<div class="mySkills" style="width: 90%">
+												CSS<span class="myPercentage">90%</span>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="skillBorder">
+									<div class="skillBorder">
+										<div class="skillPercentage">
+											<div class="mySkills" style="width: 90%">
+												MySQL<span class="myPercentage">90%</span>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="skillBorder">
+									<div class="skillBorder">
+										<div class="skillPercentage">
+											<div class="mySkills" style="width: 80%">
+												JavaScript<span class="myPercentage">80%</span>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="skillBorder">
+									<div class="skillBorder">
+										<div class="skillPercentage">
+											<div class="mySkills" style="width: 75%">
+												PHP<span class="myPercentage">75%</span>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="skillBorder">
+									<div class="skillBorder">
+										<div class="skillPercentage">
+											<div class="mySkills" style="width: 50%">
+												JAVA<span class="myPercentage">50%</span>
+											</div>
+										</div>
+									</div>
+								</div>
+									<div class="skillBorder">
+										<div class="skillBorder">
+											<div class="skillPercentage">
+												<div class="mySkills" style="width: 50%">
+													Android Development
+													<span class="myPercentage">50%</span>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="education" id="education">
+			<div class="container">
+				<div class="educationTitle">
+					Education
+				</div>
+				<div class="educationDetails">
+					<div class="row">
+						<div class="col-sm-6">
+							<div class="educationCard">
+								<div class="educatedYear">
+									2020
+								</div>
+								<div class="educatedCourse">
+									B.Sc. Computer Science
+								</div>
+								<div class="educatedInstituted">
+									V. K. Krishna Menon College
+								</div>
+								<div class="educatedPlace">
+									Mumbai, Maharashtra
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-6">
+							<div class="educationCard">
+								<div class="educatedYear">
+									2017
+								</div>
+								<div class="educatedCourse">
+									Higher Secondary Certificate
+								</div>
+								<div class="educatedInstituted">
+									Vikas Jr. College
+								</div>
+								<div class="educatedPlace">
+									Mumbai, Maharashtra
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-6">
+							<div class="educationCard">
+								<div class="educatedYear">
+									2015
+								</div>
+								<div class="educatedCourse">
+									Secondary School Certificate
+								</div>
+								<div class="educatedInstituted">
+									Vidya Mandir High School
+								</div>
+								<div class="educatedPlace">
+									Mumbai, Maharashtra
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="experience" id="experience">
+			<div class="container">
+				<div class="experienceTitle">
+					Work Experience
+				</div>
+				<div class="experienceDetails">
+					<div class="row">
+						<div class="col-sm-6">
+							<div class="experienceCard">
+								<div class="experienceYear">
+									2020 - Persent
+								</div>
+								<div class="workedCompanyName">
+									BineeshAB
+								</div>
+								<div class="workedPosition">
+									Built websites for final year students.
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-6">
+							
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="project" id="project">
+			<div class="container">
+				<div class="projectTitle">
 					Project
-				</p>
-				<div class="projects">
-					<div class="colOne">
-						<a href="http://findacres.epizy.com/" target="_blank">
-							<div class="projectOne">
-								<div class="projectName">
-									FindAcres
+				</div>
+				<div class="profileDeatils">
+					<div class="row">
+						<div class="col-sm-6">
+							<div class="projectCard">
+								<div class="projectImage">
+									<img src="image/findacersss.png" />
+									<div class="overlay">
+										
+									</div>
 								</div>
-								<div class="projectDescription">
-									It's a buy and sell house website, it is an online forum where buyers and sellers can exchange information about real estate properties.
-								</div>
-							</div>
-						</a>
-					</div>
-
-					<div class="colTwo">
-						<a href="http://jobsearch.great-site.net/"  target="_blank">
-							<div class="projectTwo">
-								<div class="projectName">
-									JobSearch
-								</div>
-								<div class="projectDescription">
-									It's a job search website to find the Job and Upload Job. It is a easiest way to find job or find better person for work.
+								<div class="projectContent">
+									<a href="http://findacres.epizy.com/" target="_blank">
+										<div class="projectName">
+											FindAcers
+										</div>
+										<div class="projectDescrption">
+											It's a buy and sell house website, it is an online forum where buyers and sellers can exchange information about real estate properties.
+										</div>
+									</a>
 								</div>
 							</div>
-						</a>
+						</div>
+						<div class="col-sm-6">
+							<div class="projectCard">
+								<div class="projectImage">
+									<img src="image/jobsearchss.png" />
+									<div class="overlay">
+										
+									</div>
+								</div>
+								<div class="projectContent">
+									<a href="http://jobsearch.great-site.net/" target="_blank">
+										<div class="projectName">
+											JobSearch
+										</div>
+										<div class="projectDescrption">
+											It's a job search website to find the Job and Upload Job. It is a easiest way to find job or find better person for work.
+										</div>
+									</a>
+								</div>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
 		</section>
 
-		<div class="footer">
-			<p>@ Copyright Reserved <span id="year"></span></p>
-		</div>
+		<section class="footer">
+			<div class="container">
+				<p>Copyright @ 2020 - <span id="year"></span></p>
+			</div>
+		</section>
 
-		<script type="text/javascript">
+		<script>
+			var TxtRotate = function(el, toRotate, period) {
+				this.toRotate = toRotate;
+				this.el = el;
+				this.loopNum = 0;
+				this.period = parseInt(period, 10) || 2000;
+				this.txt = '';
+				this.tick();
+				this.isDeleting = false;
+			};
 
-			function move() {
-				var elem = document.getElementById("myBar");
-				var width = 40;
-				var id = setInterval(frame,10);
-				function frame() {
-					if (width >= 100) {
-						clearInterval(id);
-						document.getElementById("progressBar").style.display = "none";
-					} else {
-						width++; 
-						elem.style.width = width + '%';
+			TxtRotate.prototype.tick = function() {
+				var i = this.loopNum % this.toRotate.length;
+				var fullTxt = this.toRotate[i];
+
+				if (this.isDeleting) {
+					this.txt = fullTxt.substring(0, this.txt.length - 1);
+				} else {
+					this.txt = fullTxt.substring(0, this.txt.length + 1);
+				}
+
+				this.el.innerHTML = '<span class="wrap">'+this.txt+'</span>';
+
+				var that = this;
+				var delta = 300 - Math.random() * 100;
+
+				if (this.isDeleting) { delta /= 2; }
+
+				if (!this.isDeleting && this.txt === fullTxt) {
+					delta = this.period;
+					this.isDeleting = true;
+				} else if (this.isDeleting && this.txt === '') {
+					this.isDeleting = false;
+					this.loopNum++;
+					delta = 500;
+				}
+
+				setTimeout(function() {
+					that.tick();
+				}, delta);
+			};
+
+			window.onload = function() {
+				var elements = document.getElementsByClassName('txt-rotate');
+				for (var i=0; i<elements.length; i++) {
+					var toRotate = elements[i].getAttribute('data-rotate');
+					var period = elements[i].getAttribute('data-period');
+					if (toRotate) {
+						new TxtRotate(elements[i], JSON.parse(toRotate), period);
 					}
 				}
-			}
+				// INJECT CSS
+				var css = document.createElement("style");
+				css.type = "text/css";
+				css.innerHTML = ".txt-rotate > .wrap { border-right: 0.08em solid #666 }";
+				document.body.appendChild(css);
+			};
 
 			function openNav() {
 				let five = window.matchMedia("(max-width: 500px)");
 				let seven = window.matchMedia("(max-width: 768px)");
 				if(five.matches){
-					document.getElementById("mySidenav").style.width = "60%";
+					document.getElementById("sideBar").style.width = "60%";
 				}
 				else if(seven.matches){
-					document.getElementById("mySidenav").style.width = "25%";
+					document.getElementById("sideBar").style.width = "30%";
 				}
 				else{
-					document.getElementById("mySidenav").style.width = "17%";
+					document.getElementById("sideBar").style.width = "20%";
 				}
 			}
 			function closeNav() {
-				document.getElementById("mySidenav").style.width = "0";
+				document.getElementById("sideBar").style.width = "0";
 			}
 
 			window.onscroll = function() {myFunction()};
 
-			var header = document.getElementById("myHeader");
+			var header = document.getElementById("header");
 			var sticky = header.offsetTop;
 
 			function myFunction() {

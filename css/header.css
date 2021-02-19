@@ -1,84 +1,50 @@
-* {
-	box-sizing: border-box;
-}
-/**
-	color: #ffffff; white
-	color: #1a1a1a; dark grey
-	color: #e60039; pinkish red
-**/
-@font-face{
-	font-family: 'myChopsic';
-	src: url("fonts/fonts/Chopsic.ttf");
-}
-@font-face{
-	font-family: 'mySpantaran';
-	src: url("fonts/fonts/spantaran.ttf"), url("fonts/fonts/spantaran-t.otf"), url("fonts/fonts/spantaran-th.woff");
-}
+/*
+	color: #e5e5e5; Background Color -  Grey
+	color: #418dd9; Text Title Color - Sky Blue
+	color: #4c4c4c; Text Title Color - Dark Grey
+	color: #797979; Text Color       - Grey
+
+	Dark Mode Colors
+
+	color: #28282a; BackGround Color - Mat Black
+	color: #cccccc; Text Color       - Grey
+	color: #0068b3; Mat Dark Blue
+*/
 .header{
 	position: fixed;
 	z-index: 1;
-	display: block;
 	width: 100%;
-	top: 0;
-	background: #1a1a1a;
+	background: #e5e5e5;
 }
 .logo{
-	padding: 10px 20px 8px 20px;
-	color: white;
-	font-size: 24px;
-}
-.logo a{
-	font-family: "mySpantaran", "Arial";
-	text-decoration: none;
-	color: #ffffff;
-}
-.logoColor{
-	color: #e60039;
-}
-.sticky {
-  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.2), 0 4px 15px 0 rgba(0, 0, 0, 0.10);
-}
-.downloadCVHeader{
-	margin-top: -50px;
-	margin-right: 20px;
-	padding: 5px 0px;
-	float: right;
-	top: 0px;
-}
-.downloadCVBtn{
-	background-color: #1a1a1a;
-	color: #e60039;
-	padding: 7px 15px;
-	text-align: center;
-	display: inline-block;
-	font-size: 16px;
-	margin: 4px 2px;
-	cursor: pointer;
-	border: 2px solid #e60039;
+	padding: 10px 0px;
 	font-family: Arial;
+	font-size: 24px;
 	font-weight: bold;
 }
-.downloadCVBtn a{
+.logo a{
 	text-decoration: none;
+	color: #4c4c4c;
+	padding: 0px 5px;
 }
-.downloadCVBtn:hover{
-	background-color: #ffffff;
+.logo a:hover{
+	color: #418dd9;
+	transition: 1s;
 }
-.progressBar{
-
+.ab{
+	color: #418dd9;
 }
-.myProgress {
-	position: absolute;
-	bottom: 0px;
-	width: 100%;
-	overflow: hidden;
-	border-radius: 2px;
-	background-color: #1a1a1a;
+.bars{
+	padding: 0px 5px 0px 0px;
+	font-size: 22px;
+	font-weight: bold;
+	cursor: pointer;
 }
-.myBar {
-	width: 0%;
-	height: 3px;
-	background-color: #e60039;
+.bars:hover{
+	color: #418dd9;
+}
+.sticky{
+	box-shadow: 0px 4px 6px 0px rgba(0,0,0,0.1);
 }
 @media(max-width: 1200px){
 }
@@ -87,9 +53,10 @@
 @media(max-width: 768px){
 }
 @media(max-width: 540px){
-	.downloadCVHeader{
-		display: none;
+	.bars{
+		font-size: 20px;
 	}
-}
-@media(max-height: 540px){
+	.logo{
+		font-size: 20px;
+	}
 }

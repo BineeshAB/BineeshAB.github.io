@@ -1,146 +1,117 @@
-* {
-	box-sizing: border-box;
-}
-/**
-	color: #ffffff; white
-	color: #1a1a1a; dark grey
-	color: #e60039; pinkish red
-**/
-body { 
-	margin: 0;
+/*
+	color: #e5e5e5; Background Color -  Grey
+	color: #418dd9; Text Title Color - Sky Blue
+	color: #4c4c4c; Text Title Color - Dark Grey
+	color: #797979; Text Color       - Grey
+
+	Dark Mode Colors
+
+	color: #28282a; BackGround Color - Mat Black
+	color: #cccccc; Text Color       - Grey
+	color: #0068b3; Mat Dark Blue
+*/
+body{
+	margin: 0px;
+	padding: 0px;
 }
 .home{
+	padding-top: 60px;
 	height: 100%;
-	background-color: #1a1a1a;
+	background: #e5e5e5;
+	overflow: hidden;
+	position: relative;
 }
-.name{	
-}
-.myDesc{
+.myTitle{
 	position: absolute;
 	top: 50%;
+	transform: translate(00%,-50%);
+	-webkit-transform: translate(00%, -50%);
+	-moz-transform: translate(00%, -50%);
+	-o-transform: translate(00%, -50%);
+	-ms-transform: translate(00%, -50%);
+}
+.helloWorld{
+	font-family: Arial;
+	font-size: 38px;
+	font-weight: bold;
+	color: #418dd9;
+}
+.myName{
+	font-family: Arial;
+	font-size: 50px;
+	font-weight: bold;
+	color: #4c4c4c;
+}
+.myWork{
+	font-family: Arial;
+	font-size: 32px;
+	font-weight: bold;
+	color: #4c4c4c;
+}
+.job{
+	color: #418dd9;
+}
+.socialLink{
+	position: absolute;
+	bottom: 35px;
 	left: 50%;
+	text-align: center;
 	-webkit-transform: translate(-50%, -50%);
 	-moz-transform: translate(-50%, -50%);
 	-o-transform: translate(-50%, -50%);
 	-ms-transform: translate(-50%, -50%);
 	transform: translate(-50%, -50%);
 }
-.helloWorld{
-	text-align: center;
-	font-family: Arial;
-	font-size: 40px;
-	font-weight: bold;
-	color: #e60039;
-}
-.myName{
-	text-align: center;
-	font-family: Bahnschrift;
-	font-weight: bold;
-	font-size: 60px;
-	color: #ffffff;
-}
-.breakT{
-	display: none;
-}
-.job{
-	text-align: center;
-	font-family: Arial;
-	font-size: 30px;
-	color: #e60039;
-}
-
-.lOne{
-	border-style: hidden solid hidden solid;
-	padding-right: 18px;
-	padding-left: 18px;
-}
-.lTwo{
-	border-style: hidden solid hidden hidden;
-	padding-right: 18px;
-	padding-left: 18px;
-}
-.linkIcons{
-	position: absolute;
-	bottom: 40px;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	text-align: center;
-}
-.linkIcons a{
+.socialLink a{
 	text-decoration: none;
 	font-size: 22px;
-	color: #ffffff;
-	padding-right: 15px;
-	padding-left: 15px;
+	font-weight: bold;
+	color: #000000;
+	padding: 0px 15px;
+}
+.socialLink a:hover{
+	color: #418dd9;
+}
+input:checked > .home{
+  background: #28282a;
 }
 @media(max-width: 1200px){
 }
 @media(max-width: 992px){
 }
 @media(max-width: 768px){
-	.lOne{
-		border-style: none;
-		padding: 0px;
-	}
-	.lTwo{
-		border-style: none;
-		padding: 0px;
-	}
-	.breakT{
-		display: block;
-	}
 }
 @media(max-width: 540px){
-	.name{
+	.home{
+		padding-top: 0px;
+	}
+	.myTitle{
+		padding: 0px 5%;
 	}
 	.helloWorld{
-		font-size: 22px;
+		font-size: 28px;
 	}
 	.myName{
-		font-size: 45px;
-		padding-top: 10px;
+		font-size: 35px;
 	}
 	.job{
-		font-size: 22px;
-		padding-top: 10px;
+		font-size: 26px;
 	}
-	.lOne{
-		border-style: none;
-		padding: 0px;
-	}
-	.lTwo{
-		border-style: none;
-		padding: 0px;
-	}
-	.linkIcons{
-		margin-top: 25%;
-	}
-	.breakT{
-		display: block;
-	}
-	.linkIcons a{
-		font-size: 18px;
-		padding-right: 10px;
-		padding-left: 10px;
+	.socialLink a{
+		padding: 0px 12px;
 	}
 }
 @media(max-height: 540px){
 	.home{
-		height: 760px;
-	}
-	.myDesc{
-		top: 380px;
+		height: 540px;
 	}
 	.helloWorld{
-		font-size: 30px;
-	}
-	.myName{
-		font-size: 50px;
-	}
-	.job{
 		font-size: 25px;
 	}
-	.linkIcons{
-		top: 690px;
+	.myName{
+		font-size: 40px;
+	}
+	.myWork{
+		font-size: 25px;
 	}
 }

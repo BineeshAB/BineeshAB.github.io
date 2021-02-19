@@ -1,0 +1,73 @@
+/*
+	color: #e5e5e5; Background Color -  Grey
+	color: #418dd9; Text Title Color - Sky Blue
+	color: #4c4c4c; Text Title Color - Dark Grey
+	color: #797979; Text Color       - Grey
+
+	Dark Mode Colors
+
+	color: #28282a; BackGround Color - Mat Black
+	color: #cccccc; Text Color       - Grey
+	color: #0068b3; Mat Dark Blue
+*/
+*{
+	box-sizing: border-box;
+}
+body{
+	margin: 0px;
+	padding: 0px;
+}
+.sideBar{
+	width: 0px;
+	height: 100%;
+	position: fixed;
+	overflow-x: hidden;
+	transition: 0.5s;
+	z-index: 1;
+	top: 0;
+	left: 0;
+	background: #e5e5e5;
+	box-shadow: 0px 2px 20px 0px rgba(0,0,0,0.2);
+}
+.close{
+	text-decoration: none;
+	color: #F20544;
+	font-family: Calibri;
+	font-size: 22px;
+}
+.closebtn{
+	position: absolute;
+	top: 10px;
+	right: 15px;
+	font-weight: bold;
+	text-decoration: none;
+	border-radius: 50%;
+	padding: 5px 16px;
+	cursor: pointer;
+}
+.closebtn:hover{
+	color: #418dd9;
+	background: #d9d9d9;
+	box-shadow: 2px 2px 4px rgba(0,0,0,0.1)
+}
+.sideNav{
+	position: absolute;
+	top: 70px;
+	left: 15px;
+}
+.sideNav ul{
+	list-style: none;
+	margin: 0px;
+	padding: 0px 15px;
+}
+.sideNav ul li{
+	padding: 7px 0px;
+}
+.sideNav ul li a{
+	text-decoration: none;
+	color: #4c4c4c;
+	font-size: 22px;
+}
+.sideNav ul li a:hover{
+	color: #418dd9;
+}

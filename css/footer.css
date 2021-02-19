@@ -1,22 +1,42 @@
-* {
-	box-sizing: border-box;
+/*
+	color: #e5e5e5; Background Color -  Grey
+	color: #418dd9; Text Title Color - Sky Blue
+	color: #4c4c4c; Text Title Color - Dark Grey
+	color: #797979; Text Color       - Grey
+
+	Dark Mode Colors
+
+	color: #28282a; BackGround Color - Mat Black
+	color: #cccccc; Text Color       - Grey
+	color: #0068b3; Mat Dark Blue
+*/
+body{
+	margin: 0px;
+	padding: 0px;
 }
-/**
-	color: #ffffff; white
-	color: #1a1a1a; dark grey
-	color: #e60039; pinkish red
-**/
-.footer {
+.footer{
+
 	position: fixed;
+	width: 100%;
 	left: 0;
 	bottom: 0;
-	width: 100%;
-	background-color: #1a1a1a;
-	color:  #ffffff;
+	background: #e5e5e5;
 }
-.footer p{
-	text-align: center;
-	margin-left: 20px;
-	font-size: 12px;
+.footer .container p{
+	margin: 0px;
+	padding: 0px;
+	font-size: 16px;
 	font-family: Arial;
+	padding: 10px 0px;
+}
+@media(max-width: 1200px){
+}
+@media(max-width: 992px){
+}
+@media(max-width: 768px){
+}
+@media(max-width: 540px){
+	.footer  .container p{
+		font-size: 14px;
+	}
 }
