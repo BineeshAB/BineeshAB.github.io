@@ -21,7 +21,7 @@
 		<link rel="stylesheet" href="css/experience.css">
 		<link rel="stylesheet" href="css/project.css">
 
-		<!-- <link rel="stylesheet" href="css/darkmode.css"> -->
+		<link rel="stylesheet" href="css/darkmode.css">
 
 		<link href="fonts/css/font.min.css" rel="stylesheet" type="text/css">
 
@@ -41,10 +41,12 @@
 					<a href="index.html">Bineesh<span class="ab">AB</span></a>
 				</div>
 			</div>
-			<!-- <label class="switch">
-				<input type="checkbox">
+
+			<label class="switch">
+				<input type="checkbox" id="myCheck" onclick="changeColor()">
 				<span class="slider"></span>
-			</label> -->
+			</label>
+
 			<div class="sideBar" id="sideBar">
 				<div class="container">
 					<a href="javascript:void(0)" class="close" onclick="closeNav()">
@@ -429,13 +431,15 @@
 			</div>
 		</section>
 
-		<section class="footer">
+		<section class="footer" id="footer">
 			<div class="container">
 				<p>Copyright @ 2020 - <span id="year"></span></p>
 			</div>
 		</section>
 
 		<script>
+			//autotyping code
+
 			var TxtRotate = function(el, toRotate, period) {
 				this.toRotate = toRotate;
 				this.el = el;
@@ -477,21 +481,7 @@
 				}, delta);
 			};
 
-			window.onload = function() {
-				var elements = document.getElementsByClassName('txt-rotate');
-				for (var i=0; i<elements.length; i++) {
-					var toRotate = elements[i].getAttribute('data-rotate');
-					var period = elements[i].getAttribute('data-period');
-					if (toRotate) {
-						new TxtRotate(elements[i], JSON.parse(toRotate), period);
-					}
-				}
-				// INJECT CSS
-				var css = document.createElement("style");
-				css.type = "text/css";
-				css.innerHTML = ".txt-rotate > .wrap { border-right: 0.08em solid #666 }";
-				document.body.appendChild(css);
-			};
+			//slider code
 
 			function openNav() {
 				let five = window.matchMedia("(max-width: 500px)");
@@ -510,6 +500,8 @@
 				document.getElementById("sideBar").style.width = "0";
 			}
 
+			//onscroll code
+
 			window.onscroll = function() {myFunction()};
 
 			var header = document.getElementById("header");
@@ -522,6 +514,8 @@
 					header.classList.remove("sticky");
 				}
 			}
+
+			//date Code
 
 			var d = new Date();
 			var y = d.getFullYear();
@@ -541,6 +535,45 @@
 				document.getElementById("mdob").innerHTML = mdob;
 			}
 			document.getElementById("year").innerHTML = y;
+
+			//dark Mode Mode
+
+			var header2 = document.getElementById('header');
+			var sidebar = document.getElementById('sideBar');
+			var home = document.getElementById('home');
+			var about = document.getElementById('about');
+			var profile = document.getElementById('profile');
+			var education = document.getElementById('education');
+			var experience = document.getElementById('experience');
+			var project = document.getElementById('project');
+			var footer = document.getElementById('footer');
+
+			var checkBox = document.getElementById("myCheck");
+
+			function changeColor(){
+				if(checkBox.checked == true){
+					header2.classList.add("bg-color-d");
+					sidebar.classList.add("bg-color-d");
+					home.classList.add("bg-color-d");
+					about.classList.add("bg-color-l");
+					profile.classList.add("bg-color-d");
+					education.classList.add("bg-color-l");
+					experience.classList.add("bg-color-d");
+					project.classList.add("bg-color-l");
+					footer.classList.add("bg-color-d");
+				}
+				else{
+					header2.classList.remove("bg-color-d");
+					sidebar.classList.remove("bg-color-d");
+					home.classList.remove("bg-color-d");
+					about.classList.remove("bg-color-l");
+					profile.classList.remove("bg-color-d");
+					education.classList.remove("bg-color-l");
+					experience.classList.remove("bg-color-d");
+					project.classList.remove("bg-color-l");
+					footer.classList.remove("bg-color-d");
+				}
+			}
 		</script>
 	</body>
 </html>

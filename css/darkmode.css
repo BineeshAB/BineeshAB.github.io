@@ -7,6 +7,7 @@
   Dark Mode Colors
 
   color: #28282a; BackGround Color - Mat Black
+  color: #353538; BackGround Color - Mat Black ligher
   color: #cccccc; Text Color       - Grey
   color: #0068b3; Mat Dark Blue
 */
@@ -64,4 +65,126 @@ input:checked + .slider:before {
   -ms-transform: translateX(26px);
   transform: translateX(26px);
   background-color: #28282a;
+}
+/*full page section*/
+.bg-color-d{
+  background: #28282a;
+}
+.bg-color-l{
+  background: #303033;
+}
+/*header section*/
+.bg-color-d .bars{
+  color: #ffffff;
+}
+.bg-color-d .logo a{
+  color: #ffffff;
+}
+/*home section*/
+.bg-color-d .myTitle .myName{
+  color: #ffffff;
+}
+.bg-color-d .myTitle .myWork{
+  color: #ffffff;
+}
+.bg-color-d .socialLink a{
+  color: #ffffff;
+}
+.bg-color-d .socialLink a:hover{
+  color: #0068b3;
+}
+/*about section*/
+.bg-color-l .aboutHeadline{
+  color: #ffffff;
+}
+.bg-color-l .description p{
+  color: #cccccc;
+}
+.bg-color-l .downloadBtn{
+  background-image: linear-gradient(300deg, #353538 , #3d3d40);
+  /*background: #353538;*/
+  color: #0068b3;
+}
+/*profile section*/
+.bg-color-d .profileHeadline, .bg-color-d .skillsHeadline{
+  color: #ffffff;
+}
+.bg-color-d .personalTitle{
+  color: #ffffff;
+}
+.bg-color-d .personalDetail{
+  color: #cccccc;
+}
+.bg-color-d .skillBorder{
+  background: #353538;
+}
+.bg-color-d .skillPercentage{
+  border-color: #353538;
+}
+.bg-color-d .skillPercentage .myPercentage{
+  color: #ffffff;
+}
+/*education section*/
+.bg-color-l .educationCard{
+  background: #353538;
+}
+.bg-color-l .educatedYear{
+  color: #cccccc;
+}
+.bg-color-l .educatedInstituted{
+  color: #ffffff;
+}
+.bg-color-l .educatedPlace{
+  color: #cccccc;
+}
+/*experience section*/
+.bg-color-d .experienceCard{
+  background: #353538;
+}
+.bg-color-d .experienceYear{
+  color: #cccccc;
+}
+.bg-color-d .workedPosition{
+  color: #ffffff;
+}
+/*project section*/
+.bg-color-l .projectCard{
+  background: #353538;
+}
+.bg-color-l .projectDescrption{
+  color: #cccccc;
+}
+/*footer section*/
+.bg-color-d p{
+  color: #ffffff;
+}
+/*slider section*/
+.bg-color-d .closeBtn:hover{
+  background: #353538;
+}
+.bg-color-d .sideNav a{
+  color: #ffffff;
+}
+/*gallery section*/
+.bg-color-l .lightBoxContainer{
+  background: #353538;
+}
+.bg-color-l .title{
+  color: #ffffff;
+  background-image: linear-gradient(to bottom, #000000 , transparent);
+}
+.bg-color-l .footerbottom{
+  background-image: linear-gradient(to top, #000000 , transparent);
+}
+.bg-color-l .photoCloseBtn:hover{
+  background: #000000;
+}
+.bg-color-l .footerbottom a{
+  color: #ffffff;
+}
+.bg-color-l .leftBtn:hover{
+  background: #000000;
+}
+.bg-color-l .rightBtn:hover{
+  background: #000000;
 }

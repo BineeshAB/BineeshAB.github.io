@@ -1,7 +1,7 @@
 <!-- <!DOCTYPE html> -->
 <html>
 	<head>
-		<title>Portfolio - Bineesh Alakkal</title>
+		<title>Portfolio - Bineesh  Alakkal</title>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
@@ -16,7 +16,7 @@
 
 		<link rel="stylesheet" href="css/gallery.css">
 
-		<!-- <link rel="stylesheet" href="css/darkmode.css"> -->
+		<link rel="stylesheet" href="css/darkmode.css">
 
 		<link href="fonts/css/font.min.css" rel="stylesheet" type="text/css">
 
@@ -36,10 +36,12 @@
 					<a href="index.html">Bineesh<span class="ab">AB</span></a>
 				</div>
 			</div>
-			<!-- <label class="switch">
-				<input type="checkbox">
+
+			<label class="switch">
+				<input type="checkbox" id="myCheck" onclick="changeColor()">
 				<span class="slider"></span>
-			</label> -->
+			</label>
+
 			<div class="sideBar" id="sideBar">
 				<div class="container">
 					<a href="javascript:void(0)" class="close" onclick="closeNav()">
@@ -71,7 +73,7 @@
 			</div>
 		</section>
 
-		<section class="gallery">
+		<section class="gallery" id="gallery">
 			<div class="container">
 				<div class="galleryTitle">
 					PhotoGraphs
@@ -425,7 +427,7 @@
 			</div>
 		</section>
 
-		<section class="footer">
+		<section class="footer" id="footer">
 			<div class="container">
 				<p>Copyright @ 2020 - <span id="year"></span></p>
 			</div>
@@ -464,22 +466,31 @@
 
 			var d = new Date();
 			var y = d.getFullYear();
-			var m = d.getMonth() + 1;
-			var day = d.getDate();
-	  
-			var mdob = y - 1999;
-			if(m == 5){
-				if(day < 22){
-					document.getElementById("mdob").innerHTML = mdob - 1;
-				} else if(day >= 22){
-					document.getElementById("mdob").innerHTML = mdob;
-				}			
-			} else if(m < 5){
-				document.getElementById("mdob").innerHTML = mdob - 1;
-			} else if(m > 5 ){
-				document.getElementById("mdob").innerHTML = mdob;
-			}
 			document.getElementById("year").innerHTML = y;
+
+			//dark Mode Mode
+
+			var header2 = document.getElementById('header');
+			var sidebar = document.getElementById('sideBar');
+			var gallery = document.getElementById('gallery');
+			var footer = document.getElementById('footer');
+
+			var checkBox = document.getElementById("myCheck");
+
+			function changeColor(){
+				if(checkBox.checked == true){
+					header2.classList.add("bg-color-d");
+					sidebar.classList.add("bg-color-d");
+					gallery.classList.add("bg-color-d");
+					footer.classList.add("bg-color-d");
+				}
+				else{
+					header2.classList.remove("bg-color-d");
+					sidebar.classList.remove("bg-color-d");
+					gallery.classList.remove("bg-color-d");
+					footer.classList.remove("bg-color-d");
+				}
+			}
 		</script>
 	</body>
 </html>
