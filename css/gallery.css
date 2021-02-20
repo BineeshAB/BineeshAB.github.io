@@ -16,7 +16,7 @@ body{
 }
 .gallery{
 	padding-top: 70px;
-	padding-bottom: 70px;
+	padding-bottom: 100px;
 	height: 100%;
 }
 .galleryTitle{
@@ -146,6 +146,9 @@ body{
 	}
 }
 @media(max-width: 540px){
+	.gallery{
+		height: auto;
+	}
 	.myPhotographs .col-sm-2{
 		width: 50%;
 	}
