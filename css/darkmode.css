@@ -154,6 +154,12 @@ input:checked + .slider:before {
 .bg-color-l .projectDescrption{
   color: #cccccc;
 }
+.bg-color-l .projectDescrption:hover{
+  color: #ffffff;
+}
+.bg-color-l a:hover > .projectDescrption{
+  color: #ffffff;
+}
 /*footer section*/
 .bg-color-d p{
   color: #ffffff;
@@ -171,10 +177,12 @@ input:checked + .slider:before {
 }
 .bg-color-l .title{
   color: #ffffff;
-  background-image: linear-gradient(to bottom, #000000 , transparent);
+  background: #28282a;
+  /*background-image: linear-gradient(to bottom, #000000 , transparent);*/
 }
 .bg-color-l .footerbottom{
-  background-image: linear-gradient(to top, #000000 , transparent);
+  background: #28282a;
+  /*background-image: linear-gradient(to top, #000000 , transparent);*/
 }
 .bg-color-l .photoCloseBtn:hover{
   background: #000000;
@@ -182,9 +190,9 @@ input:checked + .slider:before {
 .bg-color-l .footerbottom a{
   color: #ffffff;
 }
-.bg-color-l .leftBtn:hover{
+.bg-color-l .footerbottom a:hover{
   background: #000000;
 }
-.bg-color-l .rightBtn:hover{
+.bg-color-l .footerbottom a:hover{
   background: #000000;
 }
