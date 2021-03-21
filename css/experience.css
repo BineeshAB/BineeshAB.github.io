@@ -23,6 +23,9 @@ body{
 	height: auto;
 	background: #e5e5e5;
 }
+.experience .container{
+	padding: 0px 5%;
+}
 .experienceTitle{
 	text-align: center;
 	color: #418dd9;
@@ -30,21 +33,26 @@ body{
 	font-size: 30px;
 	font-weight: bold;
 }
-.experienceDetails{
+.experienceSection{
+	border-left: 2px solid #418dd9;
+	padding-left: 50px;
 	margin-top: 30px;
 }
-.experienceCard{
-	width: 400px;
-	background: #d9d9d9;
-	padding: 20px 30px;
-	border-radius: 5px;
-	box-shadow:
-		0 1px 2px rgba(0,0,0,0.07), 
-        0 2px 4px rgba(0,0,0,0.07), 
-        0 4px 8px rgba(0,0,0,0.07), 
-        0 8px 16px rgba(0,0,0,0.07),
-        0 16px 32px rgba(0,0,0,0.07),
-        0 32px 64px rgba(0,0,0,0.07);
+.experienceSection .item{
+	position: relative;
+	padding-top: 10px;
+	margin-bottom: 30px;
+}
+.experience .experienceIcon{
+	position: absolute;
+	top: 15px;
+	left: 0px;
+	font-size: 20px;
+	background: #418dd9;
+	border-radius: 50%;
+	padding: 15px;
+	color: #ffffff;
+	margin-left: -75px;
 }
 .experienceYear{
 	font-size: 18px;
@@ -77,16 +85,21 @@ body{
 @media(max-width: 992px){
 }
 @media(max-width: 768px){
-	.experience .col-sm-6{
-		padding: 20px 20px;
-	}
 }
 @media(max-width: 540px){
-	.experienceDetails{
-		margin-top: 0px;
+	.experience .container{
+		padding: 30px;
 	}
-	.experienceCard{
-		width: 100%;
+	.experienceSection{
+		padding-left: 30px;
+	}
+	.experience .experienceIcon{
+		margin-left: -50px;
+		font-size: 18px;
+		padding: 10px;
+	}
+	.experienceTitle{
+		font-size: 26px;
 	}
 	.experienceYear{
 		font-size: 16px;
@@ -95,9 +108,6 @@ body{
 		font-size: 20px;
 	}
 	.workedPosition{
-		font-size: 20px;
-	}
-	.experience .col-sm-6{
-		padding: 20px;
+		font-size: 18px;
 	}
 }
