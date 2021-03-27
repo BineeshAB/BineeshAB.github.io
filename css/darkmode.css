@@ -81,6 +81,9 @@ input:checked + .slider:before {
   color: #ffffff;
 }
 /*home section*/
+.bg-color-d .myTitle .helloWorld{
+  color: #ffffff;
+}
 .bg-color-d .myTitle .myName{
   color: #ffffff;
 }
@@ -119,7 +122,11 @@ input:checked + .slider:before {
   background: #353538;
 }
 .bg-color-d .skillPercentage{
-  border-color: #353538;
+  border: 3px #353538 solid;
+  border-radius: 15px;
+}
+.bg-color-d .mySkills{
+  border-radius: 5px;
 }
 .bg-color-d .skillPercentage .myPercentage{
   color: #ffffff;
