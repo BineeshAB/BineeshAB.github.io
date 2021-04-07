@@ -1,15 +1,12 @@
 /*
-	Theme Name: CoinShala
+	Theme Name: AB Portfolio
 	Description: This theme is made specifically for Portfolio website called BineeshAB. Its simple and color grey tone color theme.
 	Author: Bineesh AB
 	Author URI: https://bineeshab.github.io/
 	Version: 2.0
-	License: GNU General Public License v2 or later
-	License URI: http://www.gnu.org/licenses/gpl-2.0.html
 	Text Domain: bineeshab
 	This theme, like GitHub, is licensed under the GPL.
 	Use it to make something cool, have fun, and share what you've learned with others.
-	Tags: 
 
 	color: #e5e5e5; Background Color -  Grey
 	color: #418dd9; Text Title Color - Sky Blue
@@ -23,6 +20,12 @@
 	color: #0068b3; Mat Dark Blue
 	
 */
+*{
+	box-sizing: border-box;
+}
+html{
+	scroll-behavior: smooth;
+}
 body{
 	margin: 0px;
 	padding: 0px;
