@@ -1,25 +1,20 @@
-/*
-	color: #e5e5e5; Background Color -  Grey
-	color: #418dd9; Text Title Color - Sky Blue
-	color: #4c4c4c; Text Title Color - Dark Grey
-	color: #797979; Text Color       - Grey
-
-	Dark Mode Colors
-
-	color: #28282a; BackGround Color - Mat Black
-	color: #cccccc; Text Color       - Grey
-	color: #0068b3; Mat Dark Blue
-*/
-body{
-	margin: 0px;
-	padding: 0px;
+:root{
+	--primaryColor: #418dd9;
+	--secondaryColor: #e5e5e5;
+	--darkTextColor:#4c4c4c;
+	--textColor:#797979;
+	--whiteColor: #ffffff;
+	--blackColor: #000000;
 }
 .home{
-	padding-top: 60px;
-	height: 100vh;
-	background: #e5e5e5;
-	overflow: hidden;
 	position: relative;
+	padding-top: 55px;
+	height: 100vh;
+	background: var(--secondaryColor);
+	overflow: hidden;
+	margin-left: 85px;
+	user-select: none;
+	transition: 0.6s;
 }
 .myTitle{
 	position: absolute;
@@ -34,28 +29,27 @@ body{
 	font-family: Arial;
 	font-size: 38px;
 	font-weight: bold;
-	color: #4c4c4c;
+	color: var(--darkTextColor);
 }
 .myName{
 	font-family: Arial;
 	font-size: 50px;
 	font-weight: bold;
-	color: #4c4c4c;
+	color: var(--darkTextColor);
 }
 .myWork{
 	font-family: Arial;
 	font-size: 32px;
 	font-weight: bold;
-	color: #4c4c4c;
+	color: var(--darkTextColor);
 }
 .job{
-	color: #418dd9;
+	color: var(--primaryColor);
 }
 .socialLink{
 	position: absolute;
 	bottom: 35px;
 	left: 50%;
-	text-align: center;
 	-webkit-transform: translate(-50%, -50%);
 	-moz-transform: translate(-50%, -50%);
 	-o-transform: translate(-50%, -50%);
@@ -63,17 +57,18 @@ body{
 	transform: translate(-50%, -50%);
 }
 .socialLink a{
+	display: inline-block;
 	text-decoration: none;
 	font-size: 22px;
 	font-weight: bold;
-	color: #000000;
-	padding: 0px 15px;
+	color: var(--blackColor);
+	margin: 0px 5px;
+	padding: 5px 15px;
+	border-radius: 5px;
 }
 .socialLink a:hover{
-	color: #418dd9;
-}
-input:checked > .home{
-  background: #28282a;
+	background: #ffffff;
+	color: var(--primaryColor);
 }
 @media(max-width: 1200px){
 }
@@ -83,6 +78,7 @@ input:checked > .home{
 }
 @media(max-width: 540px){
 	.home{
+		margin-left: 0;
 		padding-top: 0px;
 	}
 	.myTitle{
@@ -98,7 +94,8 @@ input:checked > .home{
 		font-size: 24px;
 	}
 	.socialLink a{
-		padding: 0px 12px;
+		margin: 0;
+		padding: 5px 10px;
 	}
 }
 @media(max-height: 540px){

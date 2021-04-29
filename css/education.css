@@ -1,30 +1,22 @@
-/*
-	color: #e5e5e5; Background Color -  Grey
-	color: #418dd9; Text Title Color - Sky Blue
-	color: #4c4c4c; Text Title Color - Dark Grey
-	color: #797979; Text Color       - Grey
-
-	Dark Mode Colors
-
-	color: #28282a; BackGround Color - Mat Black
-	color: #cccccc; Text Color       - Grey
-	color: #0068b3; Mat Dark Blue
-*/
-*{
-	box-sizing: border-box;
-}
-body{
-	margin: 0px;
-	padding: 0px;
+:root{
+	--primaryColor: #418dd9;
+	--secondaryColor: #e5e5e5;
+	--darkTextColor: #4c4c4c;
+	--textColor: #797979;
+	--whiteColor: #ffffff;
+	--blackColor: #000000;
 }
 .education{
 	padding-top: 70px;
 	padding-bottom: 70px;
+	margin-left: 85px;
 	height: auto;
+	background: var(--whiteColor);
+	transition: 0.6s;
 }
 .educationTitle{
 	text-align: center;
-	color: #418dd9;
+	color: var(--primaryColor);
 	font-family: arial;
 	font-size: 30px;
 	font-weight: bold;
@@ -33,28 +25,28 @@ body{
 	display: flex;
 	margin-top: 30px;
 }
+.educationCardList{
+	display: flex;
+	justify-content: center;
+	padding: 0px 30px;
+}
 .educationCard{
+	margin-bottom: 40px;
 	width: 400px;
-	background: #e5e5e5;
+	background: var(--secondaryColor);
 	padding: 20px 30px;
 	border-radius: 5px;
-	box-shadow:
-		0 1px 2px rgba(0,0,0,0.07), 
-        0 2px 4px rgba(0,0,0,0.07), 
-        0 4px 8px rgba(0,0,0,0.07), 
-        0 8px 16px rgba(0,0,0,0.07),
-        0 16px 32px rgba(0,0,0,0.07),
-        0 32px 64px rgba(0,0,0,0.07);
+	box-shadow: 2px 4px 8px rgba(0,0,0,0.1);
 }
 .educatedYear{
 	font-size: 18px;
 	font-family: Calibri;
-	color: #808080;
+	color: var(--darkTextColor);
 }
 .educatedCourse{
 	font-size: 24px;
 	font-family: Calibri;
-	color: #418dd9
+	color: var(--primaryColor);
 }
 .educatedInstituted{
 	margin-top: 10px;
@@ -63,7 +55,7 @@ body{
 .educatedPlace{
 	font-size: 18px;
 	font-family: Calibri;
-	color: #808080;
+	color: var(--darkTextColor);
 } 
 .education .col-sm-6{
 	display: flex;
@@ -81,8 +73,14 @@ body{
 	}
 }
 @media(max-width: 540px){
+	.education{
+		margin-left: 0;
+	}
 	.educationDetails{
 		margin-top: 0px;
+	}
+	.educationCardList{
+		padding: 0 20px;
 	}
 	.educationCard{
 		width: 100%;
@@ -95,8 +93,5 @@ body{
 	}
 	.educatedInstituted{
 		font-size: 20px;
-	}
-	.education .col-sm-6{
-		padding: 20px;
 	}
 }

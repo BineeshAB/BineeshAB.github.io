@@ -1,28 +1,13 @@
-/*
-	color: #e5e5e5; Background Color -  Grey
-	color: #418dd9; Text Title Color - Sky Blue
-	color: #4c4c4c; Text Title Color - Dark Grey
-	color: #797979; Text Color       - Grey
-
-	Dark Mode Colors
-
-	color: #28282a; BackGround Color - Mat Black
-	color: #cccccc; Text Color       - Grey
-	color: #0068b3; Mat Dark Blue
-*/
-body{
-	margin: 0px;
-	padding: 0px;
-}
 .footer{
-
 	position: fixed;
 	width: 100%;
+	margin-left: 85px;
 	left: 0;
 	bottom: 0;
-	background: #e5e5e5;
+	background: var(--secondaryColor);
+	transition: 0.6s;
 }
-.footer .container p{
+.footer p{
 	margin: 0px;
 	padding: 0px;
 	font-size: 16px;
@@ -36,6 +21,9 @@ body{
 @media(max-width: 768px){
 }
 @media(max-width: 540px){
+	.footer{
+		margin-left: 0;
+	}
 	.footer  .container p{
 		font-size: 14px;
 	}

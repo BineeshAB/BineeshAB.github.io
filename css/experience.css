@@ -10,18 +10,13 @@
 	color: #cccccc; Text Color       - Grey
 	color: #0068b3; Mat Dark Blue
 */
-*{
-	box-sizing: border-box;
-}
-body{
-	margin: 0px;
-	padding: 0px;
-}
 .experience{
 	padding-top: 70px;
 	padding-bottom: 70px;
+	margin-left: 85px;
 	height: auto;
-	background: #e5e5e5;
+	background: var(--secondaryColor);
+	transition: 0.6s;
 }
 .experience .container{
 	padding: 0px 5%;
@@ -87,6 +82,9 @@ body{
 @media(max-width: 768px){
 }
 @media(max-width: 540px){
+	.experience{
+		margin-left: 0;
+	}
 	.experience .container{
 		padding: 30px;
 	}

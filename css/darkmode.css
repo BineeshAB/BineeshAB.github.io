@@ -1,86 +1,34 @@
-/*
-  color: #e5e5e5; Background Color -  Grey
-  color: #418dd9; Text Title Color - Sky Blue
-  color: #4c4c4c; Text Title Color - Dark Grey
-  color: #797979; Text Color       - Grey
-
-  Dark Mode Colors
-
-  color: #28282a; BackGround Color - Mat Black
-  color: #353538; BackGround Color - Mat Black ligher
-  color: #cccccc; Text Color       - Grey
-  color: #0068b3; Mat Dark Blue
-*/
-.switch {
-	margin-top: -39px;
-	position: relative;
-	float: right;
-	width: 50px;
-	height: 24px;
-	margin-right: 20px;
-	float: right;
-	top: 0px;
-}
-.switch input { 
-	opacity: 0;
-	width: 0;
-	height: 0;
-}
-.slider {
-  position: absolute;
-  cursor: pointer;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: #28282a;
-  -webkit-transition: .4s;
-  transition: .4s;
-  border-radius: 34px;
-}
-
-.slider:before {
-  position: absolute;
-  content: "";
-  height: 16px;
-  width: 16px;
-  left: 4px;
-  bottom: 4px;
-  background-color: #0068b3;
-  -webkit-transition: .4s;
-  transition: .4s;
-  border-radius: 50%;
-}
-
-input:checked + .slider {
-  background-color: #ccc;
-}
-
-input:focus + .slider {
-  box-shadow: 0 0 1px #0068b3;
-}
-
-input:checked + .slider:before {
-  -webkit-transform: translateX(26px);
-  -ms-transform: translateX(26px);
-  transform: translateX(26px);
-  background-color: #28282a;
+:root{
+ 
 }
 /*full page section*/
 .bg-color-d{
-  background: #28282a;
+  background: var(--primaryDark);
 }
 .bg-color-l{
-  background: #303033;
+  background: var(--secondaryDark);
 }
 /*header section*/
 .bg-color-d .bars{
+  color: var(--whiteColor);
+}
+.bg-color-d .logo{
+  color: var(--whiteColor);
+}
+.bg-color-d .toggleBtn button{
+  color: var(--whiteColor);
+}
+/*Slide Icon*/
+.bg-color-d.slideIcon a{
+  color: var(--whiteColor);
+}
+.bg-color-d.slideIcon a:hover{
+  color: var(--primaryColor);
+}
+/*slider section*/
+.bg-color-d.slider a{
   color: #ffffff;
 }
-.bg-color-d .logo a{
-  color: #ffffff;
-}
-/*home section*/
 .bg-color-d .myTitle .helloWorld{
   color: #ffffff;
 }
@@ -169,13 +117,6 @@ input:checked + .slider:before {
 }
 /*footer section*/
 .bg-color-d p{
-  color: #ffffff;
-}
-/*slider section*/
-.bg-color-d .closeBtn:hover{
-  background: #353538;
-}
-.bg-color-d .sideNav a{
   color: #ffffff;
 }
 /*gallery section*/

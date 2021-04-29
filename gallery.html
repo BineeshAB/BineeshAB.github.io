@@ -1,17 +1,32 @@
-<!-- <!DOCTYPE html> -->
-<html>
+<!DOCTYPE html>
+<html lang="en">
 	<head>
-		<title>Portfolio - Bineesh  Alakkal</title>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<title>Photography | BineeshAB</title>
 
-		<link rel="icon" type="image/png" href="image/ablogo.png">
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+
+		<link rel="canonical" href="https://bineeshab.github.io/" />
+		<link rel="icon" type="image/png" href="image/ablogo.png" />
+
+		<meta name="description" content="Bineesh's portfolio site, you can find most off all Bineesh's photography in this gallery page.">
+		<meta name="keywords" content="Bineesh, Bineesh Alakkal, Portfolio, Bineesh Portfolio, Bineesh AB, AB, Bineesh Photos, Bineesh AB Photos, Ab Photos, Bineesh Photography, Bineesh AB Photography, Ab Photography ">
+		<meta name="author" content="Bineesh AB">
+		
+		<meta property="og:description" content="Bineesh's portfolio site, you can find most off all Bineesh's photography in this gallery page." />
+		<meta property="og:image" content="https://bineeshab.github.io/image/ablogo.png" />
+		<meta property="og:image:width" content="500" />
+		<meta property="og:image:height" content="500" />
+
+		<meta name="twitter:description" content="Bineesh's portfolio site, you can find most off all Bineesh's photography in this gallery page." />
+		<meta name="twitter:image" content="https://bineeshab.github.io/image/ablogo.png" />
 
 		<link rel="stylesheet" href="css/bootstrap.css">
 		<link rel="stylesheet" href="css/style.css">
+
 		<link rel="stylesheet" href="css/header.css">
 		<link rel="stylesheet" href="css/footer.css">
-
+		<link rel="stylesheet" href="css/slideicon.css">
 		<link rel="stylesheet" href="css/slider.css">
 
 		<link rel="stylesheet" href="css/gallery.css">
@@ -20,61 +35,103 @@
 
 		<link href="fonts/css/font.min.css" rel="stylesheet" type="text/css">
 
-		<style type="text/css">
-			html{
-				scroll-behavior: smooth;
-			}
-		</style>
-
 	</head>
 	<body>
 
-		<section class="header" id="header">
+		<header class="header" id="header">
+			<span class="bars" id="bars" onclick="openNav()">&#9776;</span>
+			<span class="bars" id="close" onclick="closeNav()">&times;</span>
 			<div class="container">
-				<div class="logo">
-					<span class="bars" onclick="openNav()">&#9776;</span>
-					<a href="index.html">Bineesh<span class="ab">AB</span></a>
-				</div>
+				<a href="index.html" class="logo">Bineesh<span class="abColor">AB</span></a>
 			</div>
+			<div class="toggleBtn" id="toggleBtn">
+				<button class="menuIcon" id="moon" onclick="moon()">
+					<i class="fa fa-moon-o"></i>
+				</button>
+				<button class="menuIcon" id="sun" onclick="sun()">
+					<i class="fa fa-sun-o"></i>
+				</button>
+			</div>
+		</header>
 
-			<label class="switch">
-				<input type="checkbox" id="myCheck" onclick="changeColor()">
-				<span class="slider"></span>
-			</label>
+		<div class="slideIcon" id="slideIcon">
+			<a href="index.html#home" class="menuIcon">
+				<i class="fa fa-home"></i>
+			</a>
+			<a href="index.html#about" class="menuIcon">
+				<i class="fa fa-id-card-o"></i>
+			</a>
+			<a href="index.html#profile" class="menuIcon">
+				<i class="fa fa-user-o"></i>
+			</a>
+			<a href="index.html#education" class="menuIcon">
+				<i class="fa fa-graduation-cap"></i>
+			</a>
+			<a href="index.html#experience" class="menuIcon">
+				<i class="fa fa-briefcase"></i>
+			</a>
+			<a href="index.html#project" class="menuIcon">
+				<i class="fa fa-cogs"></i>
+			</a>
+			<a href="" class="menuIcon">
+				<i class="fa fa-camera"></i>
+			</a>
 
-			<div class="sideBar" id="sideBar">
-				<div class="container">
-					<a href="javascript:void(0)" class="close" onclick="closeNav()">
-						<div class="closeBtn">X</div>
+			<!-- <a href="" class="menuIcon" id="moon">
+				<i class="fa fa-moon-o"></i>
+			</a>
+			<a href="" class="menuIcon" id="sun">
+				<i class="fa fa-sun-o"></i>
+			</a> -->
+		</div>
+		<div class="slider" id="slider">
+			<span class="bars" onclick="closeNav()">&times;</span>
+			<ul>
+					
+				<li>
+					<a href="index.html#home" onclick="closeNav()">
+						<i class="fa fa-home"></i>
+						<span>Home</span>
 					</a>
-					<div class="sideNav" id="sideNav">
-						<ul>
-							<li>
-								<a href="index.html" onclick="closeNav()">Home</a>
-							</li>
-							<li>
-								<a href="index.html#about" onclick="closeNav()">About</a>
-							</li>
-							<li>
-								<a href="index.html#profile" onclick="closeNav()">Profile</a>
-							</li>
-							<li>
-								<a href="index.html#education" onclick="closeNav()">Education</a>
-							</li>
-							<li>
-								<a href="index.html#experience" onclick="closeNav()">Experience</a>
-							</li>
-							<li>
-								<a href="index.html#project" onclick="closeNav()">Project</a>
-							</li>
-							<li>
-								<a href="gallery.html" onclick="closeNav()">Photographs</a>
-							</li>
-						</ul>
-					</div>
-				</div>
-			</div>
-		</section>
+				</li>
+				<li>
+					<a href="index.html#about" onclick="closeNav()">
+						<i class="fa fa-id-card-o"></i>
+						<span>About</span>
+					</a>
+				</li>
+				<li>
+					<a href="index.html#profile" onclick="closeNav()">
+						<i class="fa fa-user-o"></i>
+						<span>Profile</span>
+					</a>
+				</li>
+				<li>
+					<a href="index.html#education" onclick="closeNav()">
+						<i class="fa fa-graduation-cap"></i>
+						<span>Education</span>
+					</a>
+				</li>
+				<li>
+					<a href="index.html#experience" onclick="closeNav()">
+						<i class="fa fa-briefcase"></i>
+						<span>Experience</span>
+					</a>
+				</li>
+				<li>
+					<a href="index.html#project" onclick="closeNav()">
+						<i class="fa fa-cogs"></i>
+						<span>Project</span>
+					</a>
+				</li>
+				<li>
+					<a href="" onclick="closeNav()">
+						<i class="fa fa-camera"></i>
+						<span>Photographs</span>
+					</a>
+				</li>
+			</ul>
+		</div>
 
 		<section class="gallery" id="gallery">
 			<div class="container">
@@ -776,64 +833,81 @@
 			</div>
 		</section>
 
-		<script>
-			function openNav() {
-				let five = window.matchMedia("(max-width: 500px)");
-				let seven = window.matchMedia("(max-width: 768px)");
-				if(five.matches){
-					document.getElementById("sideBar").style.width = "60%";
-				}
-				else if(seven.matches){
-					document.getElementById("sideBar").style.width = "30%";
-				}
-				else{
-					document.getElementById("sideBar").style.width = "20%";
-				}
-			}
-			function closeNav() {
-				document.getElementById("sideBar").style.width = "0";
-			}
-
-			window.onscroll = function() {myFunction()};
-
-			var header = document.getElementById("header");
-			var sticky = header.offsetTop;
-
-			function myFunction() {
-				if (window.pageYOffset > sticky) {
-					header.classList.add("sticky");
-				} else {
-					header.classList.remove("sticky");
-				}
-			}
-
-			var d = new Date();
-			var y = d.getFullYear();
-			document.getElementById("year").innerHTML = y;
-
-			//dark Mode Mode
-
-			var header2 = document.getElementById('header');
-			var sidebar = document.getElementById('sideBar');
-			var gallery = document.getElementById('gallery');
-			var footer = document.getElementById('footer');
-
-			var checkBox = document.getElementById("myCheck");
-
-			function changeColor(){
-				if(checkBox.checked == true){
-					header2.classList.add("bg-color-d");
-					sidebar.classList.add("bg-color-d");
-					gallery.classList.add("bg-color-l");
-					footer.classList.add("bg-color-d");
-				}
-				else{
-					header2.classList.remove("bg-color-d");
-					sidebar.classList.remove("bg-color-d");
-					gallery.classList.remove("bg-color-l");
-					footer.classList.remove("bg-color-d");
-				}
-			}
-		</script>
 	</body>
+	<script src="js/onscroll.js"></script>
+	<script>
+
+		var d = new Date();
+		var y = d.getFullYear();
+
+		document.getElementById("year").innerHTML = y;
+		
+		let five = window.matchMedia("(max-width: 540px)");
+
+		function openNav(){
+			document.getElementById("bars").style.display = "none";
+			document.getElementById("close").style.display = "block";
+			document.getElementById("slideIcon").style.display = "none";
+			document.getElementById("slider").style.width = "260px";
+
+			if(five.matches){
+				document.getElementById("footer").style.marginLeft = "0px";
+				document.getElementById("gallery").style.marginLeft = "0px";
+			}
+			else{
+				document.getElementById("footer").style.marginLeft = "260px";
+				document.getElementById("gallery").style.marginLeft = "260px";
+			}
+
+			
+		}
+		function closeNav(){
+
+			document.getElementById("bars").style.display = "block";
+			document.getElementById("close").style.display = "none";
+			document.getElementById("slider").style.width = "0px";
+			
+			if(five.matches){
+				document.getElementById("slideIcon").style.display = "none";
+
+				document.getElementById("footer").style.marginLeft = "0px";
+				document.getElementById("gallery").style.marginLeft = "0px";
+			}
+			else{
+				document.getElementById("slideIcon").style.display = "block";
+
+				document.getElementById("footer").style.marginLeft = "85px";
+				document.getElementById("gallery").style.marginLeft = "85px";
+			}
+
+		}
+
+		var header2 = document.getElementById('header');
+		var sideicon = document.getElementById('slideIcon');
+		var sidebar = document.getElementById('slider');
+
+		function moon(){
+			document.getElementById('moon').style.display = "none";
+			document.getElementById('sun').style.display = "block";
+			if(document.getElementById('sun').style.display = "block"){
+				header2.classList.add("bg-color-d");
+				sideicon.classList.add("bg-color-d");
+				sidebar.classList.add("bg-color-d");
+				gallery.classList.add("bg-color-l");
+				footer.classList.add("bg-color-d");
+			}
+		}
+		function sun(){
+			document.getElementById('moon').style.display = "block";
+			document.getElementById('sun').style.display = "none";
+
+			if (document.getElementById('sun').style.display = "none") {
+				header2.classList.remove("bg-color-d");
+				sideicon.classList.remove("bg-color-d");
+				sidebar.classList.remove("bg-color-d");
+				gallery.classList.remove("bg-color-l");
+				footer.classList.remove("bg-color-d");
+			}
+		}
+	</script>	
 </html>

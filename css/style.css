@@ -3,23 +3,22 @@
 	Description: This theme is made specifically for Portfolio website called BineeshAB. Its simple and color grey tone color theme.
 	Author: Bineesh AB
 	Author URI: https://bineeshab.github.io/
-	Version: 2.0
+	Version: 3.0
 	Text Domain: bineeshab
 	This theme, like GitHub, is licensed under the GPL.
 	Use it to make something cool, have fun, and share what you've learned with others.
-
-	color: #e5e5e5; Background Color -  Grey
-	color: #418dd9; Text Title Color - Sky Blue
-	color: #4c4c4c; Text Title Color - Dark Grey
-	color: #797979; Text Color       - Grey
-
-	Dark Mode Colors
-
-	color: #28282a; BackGround Color - Mat Black
-	color: #cccccc; Text Color       - Grey
-	color: #0068b3; Mat Dark Blue
-	
 */
+:root{
+	--primaryColor: #418dd9;
+	--secondaryColor: #e5e5e5;
+	--darkTextColor:#4c4c4c;
+	--textColor:#797979;
+	--whiteColor: #ffffff;
+	--blackColor: #000000;
+
+	--primaryDark: #28282a;
+	--secondaryDark: #353538;
+}
 *{
 	box-sizing: border-box;
 }
@@ -29,5 +28,13 @@ html{
 body{
 	margin: 0px;
 	padding: 0px;
-	user-select: none;
+	/*user-select: none;*/
+	background: var(--secondaryColor);
+}
+button{
+	background: transparent;
+	outline: none !important;
+	border: none;
+	margin-left: 5px;
+	color: var(--darkTextColor);
 }

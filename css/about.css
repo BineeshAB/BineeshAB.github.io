@@ -1,28 +1,22 @@
-/*
-	color: #e5e5e5; Background Color -  Grey
-	color: #418dd9; Text Title Color - Sky Blue
-	color: #4c4c4c; Text Title Color - Dark Grey
-	color: #797979; Text Color       - Grey
-
-	Dark Mode Colors
-
-	color: #28282a; BackGround Color - Mat Black
-	color: #cccccc; Text Color       - Grey
-	color: #0068b3; Mat Dark Blue
-*/
-body{
-	margin: 0px;
-	padding: 0px;
+:root{
+	--primaryColor: #418dd9;
+	--secondaryColor: #e5e5e5;
+	--darkTextColor:#4c4c4c;
+	--textColor:#797979;
+	--whiteColor: #ffffff;
+	--blackColor: #000000;
 }
 .about{
 	padding-top: 70px;
 	padding-bottom: 70px;
+	margin-left: 85px;
 	height: auto;
-	background: #ffffff;
+	background: var(--whiteColor);
+	transition: 0.6s;
 }
 .aboutTitle{
 	text-align: center;
-	color: #418dd9;
+	color: var(--primaryColor);
 	font-family: arial;
 	font-size: 30px;
 	font-weight: bold;
@@ -32,7 +26,7 @@ body{
 	font-family: arial;
 	font-size: 30px;
 	font-weight: bold;
-	color: #4c4c4c;
+	color: var(--darkTextColor);
 }
 .profileImage{
 	display: flex;
@@ -43,6 +37,7 @@ body{
 .profileImage img{
 	width:250px;
 	height: 250px;
+	object-fit: cover;
 	filter: drop-shadow(0px 4px 4px rgba(0,0,0,0.5));
 }
 .about .description p{
@@ -50,7 +45,7 @@ body{
 	text-align: justify;
 	font-family: Calibri;
 	font-size: 22px;
-	color: #666666;
+	color: var(--textColor);
 }
 .col-sm-8{
 	padding: 50px 70px;
@@ -59,39 +54,60 @@ body{
 	margin-top: 30px;
 }
 .downloadBtn{
+	margin-left: 0;
 	text-align: center;
     padding: 10px 23px;
     font-size: 20px;
     font-family: Calibri;
     font-weight: bold;
     text-transform: uppercase;
-    color: #418dd9;
+    color: var(--primaryColor);
 	border:none;
 	border-radius: 5px;
 	outline: none!important;
     cursor: pointer;
     background-image: linear-gradient(315deg, #cccccc , #e5e5e5);
     box-shadow: 0px 2px 6px 0px rgba(0,0,0,0.1);
+    transition: 1s;
+    
 }
 .downloadBtn:hover{
-	transition: 1s;
-	background-image: linear-gradient(300deg, #e5e5e5 , #cccccc);
+	animation-name: gradientAnimation;
+  	animation-duration: 2s;
+  	animation-timing-function: ease-in-out;
 	box-shadow: 0px 2px 6px 0px rgba(0,0,0,0.3);
+}
+@keyframes gradientAnimation{
+	0%{
+		background-image: linear-gradient(315deg, #cccccc , #e5e5e5);
+	}
+	25%{
+		background-image: linear-gradient(360deg, #cccccc , #e5e5e5);
+	}
+	50%{
+		background-image: linear-gradient(135deg, #cccccc , #e5e5e5);
+	}
+	75%{
+		background-image: linear-gradient(45deg, #cccccc , #e5e5e5);
+	}
+	100%{
+		background-image: linear-gradient(90deg, #cccccc , #e5e5e5);
+	}
 }
 @media(max-width: 1200px){
 }
 @media(max-width: 992px){
 }
 @media(max-width: 768px){
-	.profileImage{
-		padding: 70px 0px;
-	}
 	.profileImage img{
-		width: 200px;
-		height: 200px;
+		width: 180px;
+		height: 180px;
 	}
 }
 @media(max-width: 540px){
+	.about{
+		margin-left: 0;
+	}
 	.aboutTitle{
 		font-size: 24px;
 	}
