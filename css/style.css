@@ -1,40 +1,56 @@
-/*
-	Theme Name: AB Portfolio
-	Description: This theme is made specifically for Portfolio website called BineeshAB. Its simple and color grey tone color theme.
-	Author: Bineesh AB
-	Author URI: https://bineeshab.github.io/
-	Version: 3.0
-	Text Domain: bineeshab
-	This theme, like GitHub, is licensed under the GPL.
-	Use it to make something cool, have fun, and share what you've learned with others.
-*/
 :root{
-	--primaryColor: #418dd9;
-	--secondaryColor: #e5e5e5;
-	--darkTextColor:#4c4c4c;
-	--textColor:#797979;
-	--whiteColor: #ffffff;
+	--primaryColor: #3F15EC;
+	--secondaryColor: #000000;
+	--nightColor: #060611;
+	--bgColor: #FFFFFF;
+	--secondaryBgColor: #f7f5ff;
+	--linkColor: #3F15EC;
+
+	--hoverColor: #060611;
+	--textColor: #4c4c4c;
+
+	--whiteColor: #FFFFFF;
 	--blackColor: #000000;
 
-	--primaryDark: #28282a;
-	--secondaryDark: #353538;
+	/* --primaryColorRGB: rgb(63, 21, 236); */
+	/* --secondaryBgColorRGB: rgb(247, 245, 255); */
 }
 *{
 	box-sizing: border-box;
 }
-html{
-	scroll-behavior: smooth;
-}
 body{
-	margin: 0px;
-	padding: 0px;
+	margin: 0;
+	padding: 0;
 	/*user-select: none;*/
-	background: var(--secondaryColor);
 }
-button{
-	background: transparent;
-	outline: none !important;
-	border: none;
-	margin-left: 5px;
-	color: var(--darkTextColor);
+/*body::-webkit-scrollbar{
+	width: 15px;
+	background: var(--nightColor);
+}
+body::-webkit-scrollbar-thumb{
+	background: var(--primaryColor);
+	border-radius: 2px;
+}*/
+a{
+	text-decoration: none;
+	color: var(--linkColor);
+}
+a:hover{
+	color: var(--hoverColor);
+}
+.highLight{
+	color: var(--primaryColor);
+}
+.sectionTitle{
+	text-align: center;
+	margin-bottom: 30px;
+	font-size: 2rem;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	/* text-transform: uppercase; */
+	color: var(--primaryColor);
+	letter-spacing: 1px;
+}
+.link{
+	color: var(--linkColor);
 }

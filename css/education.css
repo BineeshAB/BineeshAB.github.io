@@ -1,18 +1,7 @@
-:root{
-	--primaryColor: #418dd9;
-	--secondaryColor: #e5e5e5;
-	--darkTextColor: #4c4c4c;
-	--textColor: #797979;
-	--whiteColor: #ffffff;
-	--blackColor: #000000;
-}
 .education{
-	padding-top: 70px;
-	padding-bottom: 70px;
-	margin-left: 85px;
+	padding: 70px 0px;
 	height: auto;
-	background: var(--whiteColor);
-	transition: 0.6s;
+	/* background: var(--secondaryBgColor); */
 }
 .educationTitle{
 	text-align: center;
@@ -33,7 +22,7 @@
 .educationCard{
 	margin-bottom: 40px;
 	width: 400px;
-	background: var(--secondaryColor);
+	background: var(--secondaryBgColor);
 	padding: 20px 30px;
 	border-radius: 5px;
 	box-shadow: 2px 4px 8px rgba(0,0,0,0.1);
