@@ -1,0 +1,35 @@
+.softwareSkills{
+    background: var(--whiteColor);
+    padding: 70px 0px;
+}
+.softwareSkills .col-sm-6{
+    width: 50%;
+}
+.softwareLogos{
+    margin-top: 15px;
+}
+.logoImg{
+    text-align: center;
+}
+.logoImg img{
+    margin-top: 15px;
+    margin-bottom: 15px;
+    width: 130px;
+}
+@media(max-width: 1200px){
+}
+@media(max-width: 992px){
+}
+@media(max-width: 768px){
+}
+@media(max-width: 540px){
+    .softwareLogos{
+        margin-top: 10px;
+    }
+    .logoImg img{
+        margin: 20px 0;
+        width: 100px;
+    }
+}
+@media(max-height: 540px){
+}

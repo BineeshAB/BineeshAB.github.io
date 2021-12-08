@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Portfolio - BineeshAB</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="shortcut icon" href="images/ablogo.png" type="image/png">
+        <link rel="stylesheet" href="css/bootstrap/bootstrap.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/header.css">
+        <link rel="stylesheet" href="css/slider.css">
+        <link rel="stylesheet" href="css/home.css">
+        <link rel="stylesheet" href="css/about.css">
+        <link rel="stylesheet" href="css/profile.css">
+        <link rel="stylesheet" href="css/softwareskills.css">
+        <link rel="stylesheet" href="css/experience.css">
+        <link rel="stylesheet" href="css/education.css">
+        <link rel="stylesheet" href="css/project.css">
+        <link rel="stylesheet" href="css/footer.css">
+
+        <link rel="stylesheet" href="css/icons/css/all.css">
+        <link rel="stylesheet" href="css/icons/css/fontawesome.min.css">
+    </head>
+    <body>
+        <header class="header" id="header">
+			<div class="container">
+				<span class="logo">
+					<a href="">Bineesh<span class="highLight">AB</span></a>
+				</span>
+				<span class="menu" onclick="openNav()">
+					<div class="menBtn"></div>
+					<div class="menBtn"></div>
+					<div class="menBtn"></div>
+				</span>
+			</div>
+		</header>
+        <div class="sliderBg" id="sliderBg">
+			<div class="slider" id="slider">
+				<ul>
+					<li>
+						<span class="closeBtn" id="closeBtn" onclick="closeNav()">x</span>
+					</li>
+					<li>
+						<a href="#home" onclick="closeNav()">
+							<i class="fas fa-home"></i>
+							<span>Home</span>
+						</a>
+					</li>
+					<li>
+						<a href="#about" onclick="closeNav()">
+							<i class="fas fa-id-card"></i>
+							<span>About</span>
+						</a>
+					</li>
+					<li>
+						<a href="#profile" onclick="closeNav()">
+							<i class="far fa-user"></i>
+							<span>Profile</span>
+						</a>
+					</li>
+					<li>
+						<a href="#experience" onclick="closeNav()">
+							<i class="fas fa-briefcase"></i>
+							<span>Experience</span>
+						</a>
+					</li>
+					<li>
+						<a href="#education" onclick="closeNav()">
+							<i class="fa fa-graduation-cap"></i>
+							<span>Education</span>
+						</a>
+					</li>
+					<li>
+						<a href="#project" onclick="closeNav()">
+							<i class="fa fa-cogs"></i>
+							<span>Project</span>
+						</a>
+					</li>
+					<li>
+						<a href="gallery.html" onclick="closeNav()">
+							<i class="fa fa-image"></i>
+							<span>Photographs</span>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+        <section class="home" id="home">
+            <div class="bgImg">
+				<img src="images/earth.png" alt="Earth Photo">
+			</div>
+            <div class="container">
+				<div class="myInfo">
+					<div class="msg">Hello, I'm</div>
+					<div class="name">Bineesh Alakkal</div>
+					<div class="myWork">
+						I am a <span class="highLight">Web
+							<span class="txt-rotate highLight" data-period="2000" data-rotate='[" Developer"," Designer"]'></span>
+						</span>
+					</div>
+				</div>
+				<div class="socialLink">
+					<a href="https://www.facebook.com/profile.php?id=100008988073916" target="_blank">
+						<i class="fab fa-facebook-f" aria-hidden="true"></i>
+					</a>
+					<a href="https://www.linkedin.com/in/bineesh-alakkal-636088200/"  target="_blank">
+						<i class="fab fa-linkedin-in" aria-hidden="true"></i>
+					</a>
+					<a href="https://www.instagram.com/a_bineesh_/"  target="_blank">
+						<i class="fab fa-instagram" aria-hidden="true"></i>
+					</a>
+				</div>
+			</div>
+        </section>
+        <section class="about"  id="about">
+			<div class="container">
+				<div class="sectionTitle">About</div>
+				<div class="row">
+					<div class="profileImage col-md-4 col-sm-12">
+						<img src="images/profileImage.png" alt="Bineesh Alakkal's Photo">
+					</div>
+					<div class="content col-md-8 col-sm-12">
+						<p class="jobTitle">Web Developer And Web Designer</p>
+						<div class="myDescription">
+							<p>
+								My name is <span class="highLight">Bineesh Alakkal</span> and I'm <span class="highLight" id="mdob">22</span> years old. Hard-worker, and I always look a challenging and good opportunity to learn and adopt the new technologies for my career growth.
+							</p>
+						</div>
+						<div class="downloadCV">
+							<a href="https://drive.google.com/file/d/1Ws0uTEaFVu_Y_hvq2Q_ZuslP7xesxJyy/view?usp=sharing" target="_blank" download>
+								<button class="downloadBtn">Download CV</button>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+        <section class="profile" id="profile">
+			<div class="container">
+                <div class="sectionTitle">Profile</div>
+				<div class="row">
+					<div class="col-md-6 col-sm-12">
+						<div class="personalDetails">
+							<div class="profileHeadline">
+								Personal Information
+							</div>
+							<div class="profileDescritption">
+								<div class="myFullname">
+									<p>
+										<span class="personalTitle">
+											FULL NAME :<br>
+										</span>
+										<span class="personalDetail">
+											Bineesh Baby Alakkal
+										</span>
+									</p>
+								</div>
+								<div class="myResidence">
+									<p>
+										<span class="personalTitle">
+											RESIDENCE :<br>
+										</span>
+										<span class="personalDetail">
+											Bengaluru, Karnataka, India
+										</span>
+									</p>
+								</div>
+								<div class="myDOB">
+									<p>
+										<span class="personalTitle">
+										DATE OF BIRTH :<br></span>
+										<span class="personalDetail">
+											22<sup>nd</sup> May, 1999
+										</span>
+									</p>
+								</div>
+								<div class="myJob">
+									<p>
+										<span class="personalTitle">
+										JOB TITLE :<br></span>
+										<span class="personalDetail">
+											Web Developer and Web Designer
+										</span>
+									</p>
+								</div>
+								<div class="myJob">
+									<p>
+										<span class="personalTitle">
+											E-MAIL ADDRESS :<br>
+										</span>
+										<span class="personalDetail">
+											<a href="mailto:bineeshalakkal22@gmail.com">bineeshalakkal22@gmail.com</a>
+										</span>
+									</p>
+								</div>
+								<div class="myJob">
+									<p>
+										<span class="personalTitle">
+											WEBSITE :<br>
+										</span>
+										<span class="personalDetail">
+											<a href="https://bineeshab.github.io/">https://bineeshab.github.io/</a>
+										</span>
+									</p>
+								</div>
+								<div class="myJob">
+									<p>
+										<span class="personalTitle">
+											HOBBIES :<br>
+										</span>
+										<span class="personalDetail">
+											Photo Editing & Photography<br>
+											<a href="gallery.html" target="_blank">View Photos</a>
+										</span>
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-6 col-sm-12">
+						<div class="skillsDetails">
+							<div class="skillsHeadline">
+								Programming Skills
+							</div>
+							<div class="skillsDescritption">
+								<div class="learnedPercentage">
+                                    <span class="learned">HTML</span>
+                                    <span class="percentage">90%</span>
+                                    <div class="barBg"><div class="bar" style="width: 90%"></div></div>
+                                </div>
+                                <div class="learnedPercentage">
+                                    <span class="learned">CSS</span>
+                                    <span class="percentage">90%</span>
+                                    <div class="barBg"><div class="bar" style="width: 90%"></div></div>
+                                </div>
+                                <div class="learnedPercentage">
+                                    <span class="learned">JavaScript</span>
+                                    <span class="percentage">90%</span>
+                                    <div class="barBg"><div class="bar" style="width: 90%"></div></div>
+                                </div>
+                                <div class="learnedPercentage">
+                                    <span class="learned">PHP</span>
+                                    <span class="percentage">80%</span>
+                                    <div class="barBg"><div class="bar" style="width: 80%"></div></div>
+                                </div>
+                                <div class="learnedPercentage">
+                                    <span class="learned">MySQL</span>
+                                    <span class="percentage">80%</span>
+                                    <div class="barBg"><div class="bar" style="width: 80%"></div></div>
+                                </div>
+                                <div class="learnedPercentage">
+                                    <span class="learned">ReactJS</span>
+                                    <span class="percentage">50%</span>
+                                    <div class="barBg"><div class="bar" style="width: 50%"></div></div>
+                                </div>
+                                <div class="learnedPercentage">
+                                    <span class="learned">JAVA</span>
+                                    <span class="percentage">50%</span>
+                                    <div class="barBg"><div class="bar" style="width: 50%"></div></div>
+                                </div>
+                                <div class="learnedPercentage">
+                                    <span class="learned">Android Development</span>
+                                    <span class="percentage">50%</span>
+                                    <div class="barBg"><div class="bar" style="width: 50%"></div></div>
+                                </div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+        <section class="softwareSkills" id="softwareSkills">
+			<div class="container">
+				<div class="sectionTitle">
+					Software Skills
+				</div>
+				<div class="softwareLogos">
+					<div class="row">
+						<div class="col-lg-3 col-md-6 col-sm-6">
+							<div class="logoImg">
+								<img src="images/icons/photoshop.png" alt="PS Logo">
+							</div>
+						</div>
+						<div class="col-lg-3 col-md-6 col-sm-6">
+							<div class="logoImg">
+								<img src="images/icons/xd.png" alt="XD Logo">
+							</div>
+						</div>
+						<div class="col-lg-3 col-md-6 col-sm-6">
+							<div class="logoImg">
+								<img src="images/icons/illustrator.png" alt="Illustrator Logo">
+							</div>
+						</div>
+						<div class="col-lg-3 col-md-6 col-sm-6">
+							<div class="logoImg">
+								<img src="images/icons/indesign.png" alt="InDesign Logo">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+        <section class="experience" id="experience">
+			<div class="container">
+				<div class="sectionTitle">
+					Work Experience
+				</div>
+				<div class="experienceSection">
+					<div class="item">
+						<i class="experienceIcon fa fa-briefcase"></i>
+						<div class="experienceYear">
+							2020 - Persent
+						</div>
+						<div class="workedCompanyName">
+							BineeshAB
+						</div>
+						<div class="workedPosition">
+							<ul>
+								<li>Built websites for final year students.</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+        <section class="education" id="education">
+			<div class="container">
+				<div class="sectionTitle">
+					Education
+				</div>
+				<div class="educationDetails">
+					<div class="row">
+						<div class="educationCardList col-md-6 col-sm-12">
+							<div class="educationCard">
+								<div class="educatedYear">
+									2020
+								</div>
+								<div class="educatedCourse">
+									B.Sc. Computer Science
+								</div>
+								<div class="educatedInstituted">
+									V. K. Krishna Menon College
+								</div>
+								<div class="educatedPlace">
+									Mumbai, Maharashtra
+								</div>
+							</div>
+						</div>
+						<div class="educationCardList col-md-6 col-sm-12">
+							<div class="educationCard">
+								<div class="educatedYear">
+									2017
+								</div>
+								<div class="educatedCourse">
+									Higher Secondary Certificate
+								</div>
+								<div class="educatedInstituted">
+									Vikas Jr. College
+								</div>
+								<div class="educatedPlace">
+									Mumbai, Maharashtra
+								</div>
+							</div>
+						</div>
+						<div class="educationCardList col-md-6 col-sm-12">
+							<div class="educationCard">
+								<div class="educatedYear">
+									2015
+								</div>
+								<div class="educatedCourse">
+									Secondary School Certificate
+								</div>
+								<div class="educatedInstituted">
+									Vidya Mandir High School
+								</div>
+								<div class="educatedPlace">
+									Mumbai, Maharashtra
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="project" id="project">
+			<div class="container">
+				<div class="sectionTitle">
+					Project
+				</div>
+				<div class="profileDeatils">
+					<div class="row">
+						<div class="col-sm-6">
+							<div class="projectCard">
+								<a href="http://findacres.epizy.com/" target="_blank">
+									<div class="projectImage">
+										<img src="images/findacers.png" />
+									</div>
+									<div class="projectContent">
+										<div class="usedLanguages">
+											<span class="languageName">HTML</span>
+											<span class="languageName">CSS</span>
+											<span class="languageName">JavaScript</span>
+											<span class="languageName">PHP</span>
+											<span class="languageName">MySQL</span>
+										</div>
+										<div class="projectName">
+											FindAcers
+										</div>
+										<div class="projectDescrption">
+											It's a buy and sell house website, it is an online forum where buyers and sellers can exchange information about real estate properties.
+										</div>
+									</div>
+								</a>
+							</div>
+						</div>
+						<div class="col-sm-6">
+							<div class="projectCard">
+								<a href="http://jobsearch.great-site.net/" target="_blank">
+									<div class="projectImage">
+										<img src="images/jobsearch.png" />
+									</div>
+									<div class="projectContent">
+										<div class="usedLanguages">
+											<span class="languageName">HTML</span>
+											<span class="languageName">CSS</span>
+											<span class="languageName">JavaScript</span>
+											<span class="languageName">PHP</span>
+											<span class="languageName">MySQL</span>
+										</div>
+										<div class="projectName">
+											JobSearch
+										</div>
+										<div class="projectDescrption">
+											It's a job search website to find the Job and Upload Job. It is a easiest way to find job or find better person for work.
+										</div>
+									</div>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+        <div class="footer">
+			<p>Copyright @ 2020 - <span id="year"></span></p>
+		</div>
+        <script src="js/onscroll.js"></script>
+		<script src="js/slider.js"></script>
+		<script src="js/autotyping.js"></script>
+		<script src="js/date.js"></script>
+    </body>
+</html>

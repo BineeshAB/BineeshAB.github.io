@@ -1,0 +1,116 @@
+.gallery{
+    padding: 70px 0;
+    padding-bottom: 100px;
+}
+.gallery .col-sm-6{
+    width: 50%;
+}
+.myImages{
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+.imageBox{
+    width: 200px;
+    height: 200px;
+    border: 2px solid #FFF;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: 0.3s ease-in-out;
+}
+.imageBox:hover{
+    transform: scale(1.03);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+}
+.imageBox img{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+.lightbox{
+    z-index: 10;
+    visibility: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0,0,0,0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+}
+.lightbox:target{
+    visibility: visible;
+    opacity: 1;
+    transition: 0.3s ease-in-out;
+}
+.lightbox .bigImgBox{
+    width: auto;
+    max-width: 80%;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    border: 5px solid #FFF;
+    transition: 0.3s ease-in-out;
+}
+.lightbox .bigImgBox img{
+    width: auto;
+    max-width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.lightbox .leftBox, .lightbox .rightBox{
+    height: 80vh;
+    width: 40px;
+    background: #fff;
+    border: 1px solid #000;
+}
+
+.lightbox .closeBtn, .lightbox .rightBtn, .lightbox .leftbox{
+    text-decoration: none;
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    border-radius: 4px;
+    background: rgba(0,0,0,0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    color: #FFF;
+    border: 1px solid #FFF;
+}
+.lightbox .leftbox{
+    top: 50%;
+    left: 15px;
+}
+.lightbox .closeBtn{
+    top: 10px;
+    right: 15px;
+}
+.lightbox .rightBtn{
+    top: 50%;
+    right: 15px;
+}
+.lightbox .closeBtn:hover, .lightbox .rightBtn:hover, .lightbox .leftbox:hover{
+    background: #FFF;
+    color: var(--primaryColor);
+}
+@media(max-width: 1200px){
+}
+@media(max-width: 992px){
+}
+@media(max-width: 768px){
+}
+@media(max-width: 540px){
+}
+@media(max-height: 540px){
+}
