@@ -11,7 +11,7 @@
 .logoImg{
     text-align: center;
 }
-.logoImg img{
+.logoImg object{
     margin-top: 15px;
     margin-bottom: 15px;
     width: 130px;
@@ -26,7 +26,7 @@
     .softwareLogos{
         margin-top: 10px;
     }
-    .logoImg img{
+    .logoImg object{
         margin: 20px 0;
         width: 100px;
     }
