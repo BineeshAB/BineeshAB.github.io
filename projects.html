@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="keywords" content="HTML, CSS, JavaScript" />
+        <meta
+            name="author"
+            content="Bineesh Baby Alakkal, Bineesh Alakkal, Bineesh Alakkal portfolio, Bineesh portfolio, BineeshAB portfolio, BineeshAB GitHub, BineeshAB developer, BineeshAB projects, BineeshAB full stack developer, BineeshAB web designer, Bineesh Alakkal developer, Bineesh Alakkal full stack developer, Bineesh Alakkal frontend developer, Bineesh Alakkal backend developer, Bineesh Alakkal graphic designer, Bineesh Alakkal web designer, Bineesh Alakkal projects, Bineesh Alakkal GitHub, Bineesh Alakkal portfolio website"
+        />
+        <meta
+            name="description"
+            content="Portfolio of Bineesh, learn about bineesh's education, projects and experiences and much more."
+        />
+        <title>BineeshAB | Portfolio</title>
+        <link rel="canonical" href="https://bineeshab.github.io/" />
+        <link rel="shortcut icon" href="icon/AB_Colored.png" type="image/png" />
+
+        <link rel="shortcut icon" href="images/ablogo.png" type="image/png" />
+
+        <link rel="stylesheet" href="css/style.css" />
+        <link rel="stylesheet" href="css/header.css" />
+        <link rel="stylesheet" href="css/project.css" />
+    </head>
+    <body>
+        <header>
+            <div class="container">
+                <div class="logo">
+                    <a href="index.html">
+                        <img
+                            src="img/AB_colored_horizontal.svg"
+                            alt="Bineesh AB Logo"
+                        />
+                    </a>
+                </div>
+                <div class="menu">
+                    <input type="checkbox" name="" id="sidebar_active" />
+                    <label for="sidebar_active">
+                        <img
+                            src="icon/3_bar.svg"
+                            alt="open_btn"
+                            id="open_btn"
+                        />
+                    </label>
+                    <label for="sidebar_active" id="close_overlay"></label>
+                    <div class="sider_bar">
+                        <label for="sidebar_active">
+                            <img
+                                src="icon/cross_bar.svg"
+                                alt="close_btn"
+                                id="close_btn"
+                            />
+                        </label>
+                        <nav>
+                            <ul>
+                                <li><a href="index.html#home_page">Home</a></li>
+                                <li><a href="index.html#about_me">About</a></li>
+                                <li>
+                                    <a href="index.html#my_skills">Skills</a>
+                                </li>
+                                <li>
+                                    <a href="index.html#experience_page"
+                                        >Experience</a
+                                    >
+                                </li>
+                                <li>
+                                    <a href="index.html#project_page"
+                                        >Projects</a
+                                    >
+                                </li>
+                                <li>
+                                    <button class="cv_dl_btn">
+                                        Download CV
+                                    </button>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <section class="project_page">
+            <div class="container">
+                <div class="project_title">
+                    My <span class="highlighted_color">Projects</span>
+                </div>
+                <div class="project_content">
+                    <div class="my_projects">
+                        <div class="project_list" id="project_list"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <script src="js/projectdata.js"></script>
+        <script src="js/projectlist.js"></script>
+    </body>
+</html>

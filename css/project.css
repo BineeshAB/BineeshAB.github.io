@@ -1,71 +1,196 @@
-.project{
-	padding: 70px 0;
-	height: auto;
-	background: var(--secondaryBgColor);
+.project_page {
+    padding: 70px 0;
+    background: var(--secondaryColor);
+    color: var(--textColorWhite);
 }
-.project .col-lg-4{
-	display: flex;
-	justify-content: center;
+.project_title {
+    font-size: 64px;
+    font-weight: bold;
 }
-.projectCard{
-	margin-bottom: 50px;
-	width: 100%;
-	max-width: 300px;
-	height: auto;
-	background: var(--whiteColor);
-	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
-	border-radius: 5px;
-	overflow: hidden;
-	transition: 0.5s;
+.project_content {
+    margin-top: 30px;
 }
-.projectCard:hover{
-	box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.4);
+.project_list,
+.project_list_three,
+.design_list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    justify-content: space-between;
+    gap: 30px;
 }
-.projectCard a{
-	text-decoration: none;
+.project_card,
+.design_card {
+    max-width: 500px;
+    margin-bottom: 30px;
+    color: var(--textColorWhite);
 }
-.projectImage img{
-	width: 100%;
+.project_card img,
+.design_card img {
+    margin-bottom: 5px;
+    width: 100%;
+    border-radius: 5px;
+    aspect-ratio: 16/9;
 }
-.projectContent{
-	padding: 15px 20px;
+.used_language,
+.used_software {
+    font-size: 10px;
+    margin-top: 5px;
 }
-.projectContent{
-	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+.used_language span,
+.used_software span {
+    display: inline-block;
+    padding: 3px 10px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    border-radius: 3px;
 }
-.usedLanguages{
-	padding: 5px 0;
+.project_name,
+.design_name {
+    font-weight: bold;
+    margin: 5px 0px;
+    margin-top: 15px;
 }
-.languageName{
-	margin-right: 4px;
-	padding: 5px 10px;
-	background: var(--primaryColor);
-	opacity: 0.5;
-	border-radius: 3px;
-	font-size: 10px;
-	letter-spacing: 1px;
-	color: var(--whiteColor);
+.project_description {
+    font-size: 14px;
+    margin: 5px 0;
 }
-.projectName{
-	margin-top: 10px;
-	font-size: 1.5rem;
-	font-weight: bold;
-	color: var(--primaryColor);
+.view_more_prj_btn,
+.view_more_design_btn {
+    text-align: center;
 }
-.projectDescrption{
-	margin-top: 3px;
-	padding-bottom: 10px;
-	letter-spacing: 1px;
-	color: var(--textColor);
+.view_btn {
+    margin-right: 30px;
+    padding: 10px 30px;
+    border: 3px solid var(--primaryColor);
+    border-radius: 200px;
+    outline: none;
+    font-weight: bold;
+    font-size: 18px;
+    cursor: pointer;
+    background: none;
+    color: var(--primaryColor);
+    transition: 0.3s ease-in-out;
 }
-@media(max-width: 1200px){
+.view_btn:hover {
+    background: var(--primaryColor);
+    color: var(--textColorWhite);
 }
-@media(max-width: 992px){
+.design_title {
+    font-size: 32px;
+    font-weight: bold;
+    margin: 30px 0;
 }
-@media(max-width: 768px){
+#javascript_color {
+    background: #f7df1e;
+    color: #000;
 }
-@media(max-width: 540px){
-	.projectCard{
-		margin-bottom: 30px;
-	}
+#reactjs_color {
+    background: #58c5e3;
+    color: #000;
+}
+#nodejs_color {
+    background: #689f63;
+    color: #000;
+}
+#mongodb_color {
+    background: #599636;
+    color: #000;
+}
+#java_color {
+    background: #e76f00;
+    color: #000;
+}
+#php_color {
+    background: #a0a3ca;
+    color: #000;
+}
+#python_color {
+    background: #ffd848;
+    color: #000;
+}
+#mysql_color {
+    background: #4d90ad;
+    color: #000;
+}
+#html_color {
+    background: #ec8267;
+    color: #000;
+}
+#css_color {
+    background: #2965f1;
+    color: #000;
+}
+#wordpress_color {
+    background: #01579b;
+    color: #ffffff;
+}
+#android_color {
+    background: #4190e6;
+    color: #000;
+}
+#github_color {
+    background: #000;
+    color: #ffffff;
+}
+#figma_color {
+    background: #f24e1e;
+    color: #000;
+}
+#blender_color {
+    background: #ea7600;
+    color: #000;
+}
+#photoshop_color {
+    background: #2585cc;
+    color: #000;
+}
+#illustrator_color {
+    background: #e6962f;
+    color: #000;
+}
+#indesign_color {
+    background: #ac354c;
+    color: #ffffff;
+}
+#adobe_xd_color {
+    background: #ff61f6;
+    color: #000;
+}
+@media (max-width: 1200px) {
+    .project_page .container {
+        padding: 0 70px;
+    }
+    .project_list,
+    .project_list_three,
+    .design_list {
+        grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    }
+    .project_card,
+    .design_card {
+        max-width: 400px;
+    }
+    .project_title {
+        font-size: 48px;
+    }
+}
+@media (max-width: 992px) {
+    .project_list,
+    .project_list_three,
+    .design_list {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+    .project_card,
+    .design_card {
+        max-width: 300px;
+    }
+}
+@media (max-width: 768px) {
+}
+@media (max-width: 540px) {
+    .project_page .container {
+        padding: 70px 30px;
+    }
+    .project_title {
+        font-size: 32px;
+    }
 }

@@ -1,0 +1,151 @@
+.my_skills {
+    background: var(--secondaryColor);
+    color: var(--textColorWhite);
+    padding: 70px 0;
+}
+.skills_title {
+    font-size: 64px;
+    font-weight: bold;
+}
+.skills_description {
+    margin-top: 30px;
+}
+.skills_description,
+.skills_content {
+    display: flex;
+    flex-direction: row;
+}
+.skills_description p,
+.skills_content .all_skills_logo {
+    width: 60%;
+    padding-right: 30px;
+}
+.skills_description span,
+.skills_content .top_skills_percentage {
+    padding-left: 20px;
+    width: 40%;
+}
+.skills_content {
+    margin-top: 30px;
+}
+.all_skills_logo {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 80px);
+    gap: 30px;
+    justify-content: space-evenly;
+}
+.skills_content .skill_logos {
+    width: 80px;
+    height: 80px;
+}
+.skills_content .skill_logos img {
+    width: 100%;
+}
+.progress_bar {
+    position: relative;
+    font-size: 18px;
+    margin-bottom: 50px;
+}
+.skills_name {
+    margin-bottom: 10px;
+}
+.percentage_pointer {
+    position: absolute;
+    top: 0;
+    right: calc(10% - 20px);
+    background: var(--primaryColor);
+    color: var(--textColorWhite);
+    padding: 5px 10px;
+    font-size: 11px;
+    border-radius: 50px;
+}
+.pointer_holder {
+    width: 4px;
+    height: 20px;
+    background: var(--primaryColor);
+    position: absolute;
+    top: 20px;
+    right: 10%;
+}
+.bg_bar {
+    width: 100%;
+    height: 5px;
+    background: var(--primaryTrans50);
+    position: relative;
+}
+.frontent_bar {
+    width: 90%;
+    height: 5px;
+    background: var(--primaryColor);
+}
+.js_percentage .frontent_bar {
+    width: 90%;
+}
+.node_percentage .frontent_bar {
+    width: 80%;
+}
+.node_percentage .percentage_pointer {
+    right: calc(20% - 20px);
+}
+.node_percentage .pointer_holder {
+    right: 20%;
+}
+.express_percentage .frontent_bar {
+    width: 70%;
+}
+.express_percentage .percentage_pointer {
+    right: calc(30% - 20px);
+}
+.express_percentage .pointer_holder {
+    right: 30%;
+}
+@media (max-width: 1200px) {
+    .skills_title {
+        font-size: 48px;
+    }
+}
+@media (max-width: 992px) {
+    .my_skills .container {
+        padding: 0 70px;
+    }
+}
+@media (max-width: 768px) {
+}
+@media (max-width: 540px) {
+    .my_skills .container {
+        padding: 30px;
+    }
+    .skills_title {
+        font-size: 32px;
+    }
+    .skills_description {
+        font-size: 12px;
+    }
+    .skills_description,
+    .skills_content {
+        flex-direction: column;
+    }
+    .skills_description p,
+    .skills_content .all_skills_logo {
+        width: 100%;
+        padding-right: 0px;
+    }
+    .skills_description span,
+    .skills_content .top_skills_percentage {
+        padding-left: 0px;
+        width: 100%;
+    }
+    .skills_content {
+        margin-top: 30px;
+    }
+    .skills_content .skill_logos {
+        width: 60px;
+        height: 60px;
+    }
+    .all_skills_logo {
+        grid-template-columns: repeat(auto-fit, 70px);
+    }
+    .top_skills_percentage {
+        margin-top: 50px;
+    }
+}
