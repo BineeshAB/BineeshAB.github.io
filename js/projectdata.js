@@ -5,7 +5,7 @@ const myProjectData = [
         description:
             "A platform for users to find rental houses and apartments. It allows landlords to list their properties, and users can search based on different criteria.",
         technologies: ["HTML", "CSS", "JavaScript", "PHP", "MySQL"],
-        link: "http://findacres.epizy.com/",
+        link: "https://github.com/BineeshAB/findacres/",
         imageSrc: "./project_images/findacers.png",
     },
     {
@@ -14,7 +14,7 @@ const myProjectData = [
         description:
             "A job portal where users can search for job opportunities, filter by various job criteria, and apply for positions. It supports both job seekers and employers.",
         technologies: ["HTML", "CSS", "JavaScript", "PHP", "MySQL"],
-        link: "http://jobsearch.great-site.net/",
+        link: "https://github.com/BineeshAB/jobsearch/",
         imageSrc: "./project_images/jobsearch.png",
     },
     {
